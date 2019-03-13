@@ -1,30 +1,27 @@
 <template>
 <no-ssr>
-  <v-layout>
   <div>
   <full-page ref="fullpage" id="fullpage" >
           <div class="section splash">
-            <h1 class="sesheadline">Enginering the Future Today</h1>
-            <h2 class="sessubheadline">We Are Synergy Efficiency Solutions</h2>
-            <div id="more">
-              <div class="headline-more">
-                <i class="fas fa-3x fa-chevron-up"></i><br>ENTER SITE
+          <div id="particles">
+            <particles />
+          </div>
+          <v-container>
+              <h1 class="sesheadline">Enginering the Future Today</h1>
+              <h2 class="sessubheadline">We Are Synergy Efficiency Solutions</h2>
+              <div id="more">
+                <div class="headline-more">
+                  <i class="fas fa-3x fa-chevron-up"></i><br>SWIPE UP
+                </div>
               </div>
-            </div>
+            </v-container>
           </div>
           <div class="section intro text-xs-center">
             <v-container>
-            <h1 class="sesheadline">Synergy Efficiency Solutions</h1>
-            <img src="/img/favicon.png" />
+            <img src="/img/favicon.png" width="200px"/>
             <p>We shifted gears since 2018 and focused more on what we could do to reduce the energy usage in buildings.</p>
             <p>We understand that now, more than ever, businesses and other enterprises across every industry are looking for new innovative ways to cut costs.</p>
-            <p>Our services will save you up to 45% off of your energy bill. </p>
             </v-container>
-            <div id="more">
-              <div class="headline-more">
-                <i class="fas fa-2x fa-chevron-up"></i><br>SWIPE MORE
-              </div>
-            </div>
           </div>
           <div class="section">
               <div class="slide middleone text-xs-center">
@@ -72,23 +69,17 @@
             </div>
             <div class="section about text-xs-center">
               <v-container>
-              <h1 class="sesheadline">Our Story</h1><br>
-              <v-img src="http://www.synergyefficiency.solutions/images/sestimeline.png" /><br><br>
-              <p>We started our company, Synergy Carbon, in 2008. Our CEO, Steve Piro, who is passionate about the environment, wanted to make a difference in the new country he called home, Indonesia. He created a company that was primarily focused on carbon mitigation. The company grew, and two years later, we realized there was a large demand for promoting energy efficiency in the buildings of Indonesia.</p>
-              <p>We shifted gears and focused more on what we could do to reduce the energy usage in buildings to save our clients money. Later in 2010 we got our first energy efficiency contract with the Kompas Gramedia Group, which, over time, has proven to be one of our leading clients.</p>
+                <v-img src="http://www.synergyefficiency.solutions/images/sestimeline.png" /><br><br>
+                <p>We started our company, Synergy Carbon, in 2008. Our CEO, Steve Piro, who is passionate about the environment, wanted to make a difference in the new country he called home, Indonesia. He created a company that was primarily focused on carbon mitigation. The company grew, and two years later, we realized there was a large demand for promoting energy efficiency in the buildings of Indonesia.</p>
+                <p>We shifted gears and focused more on what we could do to reduce the energy usage in buildings to save our clients money. Later in 2010 we got our first energy efficiency contract with the Kompas Gramedia Group, which, over time, has proven to be one of our leading clients.</p>
               </v-container>
-              <div id="more">
-                <div class="headline-more">
-                  <i class="fas fa-2x fa-chevron-down"></i><br>SEE OUR WORKS
-                </div>
-              </div>
             </div>
             <div class="section porto text-xs-center">
             <h1 class="sesheadline">Portfolio</h1>
               <v-container>
               <v-flex xs12 sm6 offset-sm3>
                     <v-card>
-                      <v-container grid-list-sm fluid>
+                      <v-container grid-list-        sm fluid>
                         <v-layout row wrap>
                           <v-flex
                             v-for="n in 9"
@@ -127,6 +118,17 @@
   </v-layout>
   </no-ssr>
 </template>
+<script>
+import Particles from '~/components/Particles.vue'
+
+export default {
+  layout: 'splash',
+  components: {
+    Particles
+  }
+}
+
+</script>
 <style>
 .splash {
   background-image: url('/img/home.jpg');
@@ -172,7 +174,7 @@
 }
 .about #more, .splash #more, .intro #more {
   position:absolute;
-  top:90%;
+  top:85%;
   margin:0 auto 0;
   width:100%;
   text-align:center;
@@ -225,4 +227,11 @@
 }
 
 
+#particles {
+  z-index: 9;
+  position:absolute;
+  width:100%;
+  height:auto;
+  display:block;
+}
 </style>
