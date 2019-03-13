@@ -44,7 +44,11 @@ module.exports = {
   plugins: [
     '@/plugins/vuetify',
     { src: '~/plugins/fullpage', ssr: false },
-    { src: '@/plugins/vue-particles', ssr: false }
+    { src: '@/plugins/vue-particles', ssr: false },
+/*
+    { src: '~plugins/vue-3d-model', ssr: false }
+*/
+
   ],
 
   /*

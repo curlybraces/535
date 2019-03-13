@@ -2,19 +2,19 @@
 <no-ssr>
   <div>
   <full-page ref="fullpage" id="fullpage" >
+  <div id="particles">
+    <particles />
+  </div>
           <div class="section splash">
-          <div id="particles">
-            <particles />
-          </div>
           <v-container>
               <h1 class="sesheadline">Enginering the Future Today</h1>
               <h2 class="sessubheadline">We Are Synergy Efficiency Solutions</h2>
+          </v-container>
               <div id="more">
                 <div class="headline-more">
                   <i class="fas fa-3x fa-chevron-up"></i><br>SWIPE UP
                 </div>
               </div>
-            </v-container>
           </div>
           <div class="section intro text-xs-center">
             <v-container>
