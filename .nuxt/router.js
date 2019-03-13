@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 
 const _b6830966 = () => interopDefault(import('../pages/3d.vue' /* webpackChunkName: "pages/3d" */))
+const _6941f827 = () => interopDefault(import('../pages/city.vue' /* webpackChunkName: "pages/city" */))
 const _cbe75648 = () => interopDefault(import('../pages/index2.vue' /* webpackChunkName: "pages/index2" */))
 const _24ccbc4e = () => interopDefault(import('../pages/inspire.vue' /* webpackChunkName: "pages/inspire" */))
 const _1d92e16a = () => interopDefault(import('../pages/page.vue' /* webpackChunkName: "pages/page" */))
@@ -86,6 +87,10 @@ export function createRouter() {
       path: "/3d",
       component: _b6830966,
       name: "3d"
+    }, {
+      path: "/city",
+      component: _6941f827,
+      name: "city"
     }, {
       path: "/index2",
       component: _cbe75648,
