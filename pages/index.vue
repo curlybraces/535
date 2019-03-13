@@ -2,10 +2,10 @@
 <no-ssr>
   <div>
   <full-page ref="fullpage" id="fullpage" >
+  <div id="particles">
+    <particles />
+  </div>
           <div class="section splash">
-          <div id="particles">
-            <particles />
-          </div>
           <v-container>
               <h1 class="sesheadline">Enginering the Future Today</h1>
               <h2 class="sessubheadline">We Are Synergy Efficiency Solutions</h2>
