@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
-const _45ee0bd6 = () => interopDefault(import('../pages/3dtom.vue' /* webpackChunkName: "pages/3dtom" */))
+const _b6830966 = () => interopDefault(import('../pages/3d.vue' /* webpackChunkName: "pages/3d" */))
 const _cbe75648 = () => interopDefault(import('../pages/index2.vue' /* webpackChunkName: "pages/index2" */))
 const _24ccbc4e = () => interopDefault(import('../pages/inspire.vue' /* webpackChunkName: "pages/inspire" */))
 const _1d92e16a = () => interopDefault(import('../pages/page.vue' /* webpackChunkName: "pages/page" */))
@@ -83,9 +83,9 @@ export function createRouter() {
     scrollBehavior,
 
     routes: [{
-      path: "/3dtom",
-      component: _45ee0bd6,
-      name: "3dtom"
+      path: "/3d",
+      component: _b6830966,
+      name: "3d"
     }, {
       path: "/index2",
       component: _cbe75648,

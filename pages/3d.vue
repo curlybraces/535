@@ -1,6 +1,8 @@
 <template>
-  <model-obj src="example/models/obj/LeePerrySmith.obj"></model-obj>
- </template>
+<no-ssr>
+  <model-obj src="/3d/7.obj" mtl="/3d/7.mtl"></model-obj>
+</no-ssr>
+</template>
 <script>
 import { ModelObj } from 'vue-3d-model'
 
