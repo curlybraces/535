@@ -2,10 +2,6 @@
 <no-ssr>
   <div>
   <full-page ref="fullpage" id="fullpage" >
-  <div id="particles">
-    <particles />
-  </div>
-
           <div class="section splash">
           <v-container>
               <h1 class="sesheadline">About US</h1>
