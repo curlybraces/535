@@ -2,14 +2,17 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
-const _1186d1f5 = () => interopDefault(import('../pages/3d.vue' /* webpackChunkName: "pages/3d" */))
-const _4d612a4e = () => interopDefault(import('../pages/about.vue' /* webpackChunkName: "pages/about" */))
-const _75617662 = () => interopDefault(import('../pages/city.vue' /* webpackChunkName: "pages/city" */))
-const _27f91784 = () => interopDefault(import('../pages/index2.vue' /* webpackChunkName: "pages/index2" */))
-const _54784ea6 = () => interopDefault(import('../pages/inspire.vue' /* webpackChunkName: "pages/inspire" */))
-const _4d43dbf3 = () => interopDefault(import('../pages/page.vue' /* webpackChunkName: "pages/page" */))
-const _0b62ad0f = () => interopDefault(import('../pages/pageprys.vue' /* webpackChunkName: "pages/pageprys" */))
-const _0df174c4 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _507eba15 = () => interopDefault(import('../pages/3d.vue' /* webpackChunkName: "pages/3d" */))
+const _e705e28e = () => interopDefault(import('../pages/about.vue' /* webpackChunkName: "pages/about" */))
+const _25eda4ef = () => interopDefault(import('../pages/city.vue' /* webpackChunkName: "pages/city" */))
+const _4b0020b8 = () => interopDefault(import('../pages/index2.vue' /* webpackChunkName: "pages/index2" */))
+const _1a670af4 = () => interopDefault(import('../pages/inspire.vue' /* webpackChunkName: "pages/inspire" */))
+const _a43b87da = () => interopDefault(import('../pages/page.vue' /* webpackChunkName: "pages/page" */))
+const _3793fd2f = () => interopDefault(import('../pages/pageprys.vue' /* webpackChunkName: "pages/pageprys" */))
+const _1d25f0f4 = () => interopDefault(import('../pages/portfolio.vue' /* webpackChunkName: "pages/portfolio" */))
+const _31af573c = () => interopDefault(import('../pages/services.vue' /* webpackChunkName: "pages/services" */))
+const _405e7076 = () => interopDefault(import('../pages/updates.vue' /* webpackChunkName: "pages/updates" */))
+const _a7962d04 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 Vue.use(Router)
 
@@ -113,6 +116,18 @@ export function createRouter() {
       path: "/pageprys",
       component: _0b62ad0f,
       name: "pageprys"
+    }, {
+      path: "/portfolio",
+      component: _1d25f0f4,
+      name: "portfolio"
+    }, {
+      path: "/services",
+      component: _31af573c,
+      name: "services"
+    }, {
+      path: "/updates",
+      component: _405e7076,
+      name: "updates"
     }, {
       path: "/",
       component: _0df174c4,
