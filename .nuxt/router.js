@@ -9,6 +9,9 @@ const _4b0020b8 = () => interopDefault(import('../pages/index2.vue' /* webpackCh
 const _1a670af4 = () => interopDefault(import('../pages/inspire.vue' /* webpackChunkName: "pages/inspire" */))
 const _a43b87da = () => interopDefault(import('../pages/page.vue' /* webpackChunkName: "pages/page" */))
 const _3793fd2f = () => interopDefault(import('../pages/pageprys.vue' /* webpackChunkName: "pages/pageprys" */))
+const _1d25f0f4 = () => interopDefault(import('../pages/portfolio.vue' /* webpackChunkName: "pages/portfolio" */))
+const _31af573c = () => interopDefault(import('../pages/services.vue' /* webpackChunkName: "pages/services" */))
+const _405e7076 = () => interopDefault(import('../pages/updates.vue' /* webpackChunkName: "pages/updates" */))
 const _a7962d04 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 Vue.use(Router)
@@ -113,6 +116,18 @@ export function createRouter() {
       path: "/pageprys",
       component: _3793fd2f,
       name: "pageprys"
+    }, {
+      path: "/portfolio",
+      component: _1d25f0f4,
+      name: "portfolio"
+    }, {
+      path: "/services",
+      component: _31af573c,
+      name: "services"
+    }, {
+      path: "/updates",
+      component: _405e7076,
+      name: "updates"
     }, {
       path: "/",
       component: _a7962d04,
