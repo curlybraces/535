@@ -73,7 +73,7 @@ export default {
 </script>
 <style>
 .aboutpage .middleone {
-  background-image: url('/img/02home-services.jpg');
+  background-image: url('/img/services.jpg');
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;

@@ -4,13 +4,7 @@
       <div class="ses-logo-push">
         <a href="/"><img src="img/logosesfull.png" /></a>
       </div>
-      <v-list>
-            <v-list-tile v-for="(item, i) in items" :key="i" :to="item.to" router exact>
-                <v-list-tile-content>
-                    <v-list-tile-title v-text="item.title"/>
-                </v-list-tile-content>
-            </v-list-tile>
-        </v-list>
+      <MenuItems />
     </v-navigation-drawer>
     <v-toolbar
       app
@@ -32,31 +26,6 @@ export default {
             clipped: false,
             drawer: false,
             fixed: false,
-            items: [{
-                title: 'Home',
-                to: '/'
-            }, {
-                title: 'About',
-                to: '/page'
-            }, {
-                title: 'Service',
-                to: '/page',
-            }, {
-                title: 'Portfolio',
-                to: '/page',
-            }, {
-                title: 'Resource',
-                to: '/page',
-            }, {
-                title: 'Case Study',
-                to: '/page',
-            }, {
-                title: 'Blog',
-                to: '/page',
-            }, {
-                title: 'Career',
-                to: '/page',
-            }],
             miniVariant: false,
             right: true,
             rightDrawer: null,
