@@ -2,13 +2,14 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
-const _b6830966 = () => interopDefault(import('../pages/3d.vue' /* webpackChunkName: "pages/3d" */))
-const _6941f827 = () => interopDefault(import('../pages/city.vue' /* webpackChunkName: "pages/city" */))
-const _cbe75648 = () => interopDefault(import('../pages/index2.vue' /* webpackChunkName: "pages/index2" */))
-const _24ccbc4e = () => interopDefault(import('../pages/inspire.vue' /* webpackChunkName: "pages/inspire" */))
-const _1d92e16a = () => interopDefault(import('../pages/page.vue' /* webpackChunkName: "pages/page" */))
-const _459bf467 = () => interopDefault(import('../pages/pageprys.vue' /* webpackChunkName: "pages/pageprys" */))
-const _592a0574 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _0faea314 = () => interopDefault(import('../pages/3d.vue' /* webpackChunkName: "pages/3d" */))
+const _716a9a90 = () => interopDefault(import('../pages/about.vue' /* webpackChunkName: "pages/about" */))
+const _ea27f5e0 = () => interopDefault(import('../pages/city.vue' /* webpackChunkName: "pages/city" */))
+const _0d3268f6 = () => interopDefault(import('../pages/index2.vue' /* webpackChunkName: "pages/index2" */))
+const _9e7dca76 = () => interopDefault(import('../pages/inspire.vue' /* webpackChunkName: "pages/inspire" */))
+const _12e09c34 = () => interopDefault(import('../pages/page.vue' /* webpackChunkName: "pages/page" */))
+const _383364d0 = () => interopDefault(import('../pages/pageprys.vue' /* webpackChunkName: "pages/pageprys" */))
+const _31fae506 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 Vue.use(Router)
 
@@ -86,31 +87,35 @@ export function createRouter() {
 
     routes: [{
       path: "/3d",
-      component: _b6830966,
+      component: _0faea314,
       name: "3d"
     }, {
+      path: "/about",
+      component: _716a9a90,
+      name: "about"
+    }, {
       path: "/city",
-      component: _6941f827,
+      component: _ea27f5e0,
       name: "city"
     }, {
       path: "/index2",
-      component: _cbe75648,
+      component: _0d3268f6,
       name: "index2"
     }, {
       path: "/inspire",
-      component: _24ccbc4e,
+      component: _9e7dca76,
       name: "inspire"
     }, {
       path: "/page",
-      component: _1d92e16a,
+      component: _12e09c34,
       name: "page"
     }, {
       path: "/pageprys",
-      component: _459bf467,
+      component: _383364d0,
       name: "pageprys"
     }, {
       path: "/",
-      component: _592a0574,
+      component: _31fae506,
       name: "index"
     }],
 
