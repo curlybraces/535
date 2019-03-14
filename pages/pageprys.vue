@@ -16,7 +16,7 @@
 
       <v-flex xs6>
         <v-card dark color="secondary">
-          <v-card-text class="px-0">Author</v-card-text>
+          <v-card-text class="px-0">Authors</v-card-text>
         </v-card>
       </v-flex>
 
