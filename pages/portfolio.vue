@@ -1,15 +1,14 @@
-<template lang="html">
-  <div class="component-wrapper">
-    <p>I'm a new vue component.</p>
+<template>
+  <div>
   </div>
 </template>
 
 <script>
-  export default {
-    mounted() {
-      console.log('New component mounted.')
-    }
+export default {
+  layout: 'front',
+  components: {
   }
+}
 </script>
 
 <style lang="css">

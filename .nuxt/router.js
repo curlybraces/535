@@ -90,31 +90,31 @@ export function createRouter() {
 
     routes: [{
       path: "/3d",
-      component: _1186d1f5,
+      component: _507eba15,
       name: "3d"
     }, {
       path: "/about",
-      component: _4d612a4e,
+      component: _e705e28e,
       name: "about"
     }, {
       path: "/city",
-      component: _75617662,
+      component: _25eda4ef,
       name: "city"
     }, {
       path: "/index2",
-      component: _27f91784,
+      component: _4b0020b8,
       name: "index2"
     }, {
       path: "/inspire",
-      component: _54784ea6,
+      component: _1a670af4,
       name: "inspire"
     }, {
       path: "/page",
-      component: _4d43dbf3,
+      component: _a43b87da,
       name: "page"
     }, {
       path: "/pageprys",
-      component: _0b62ad0f,
+      component: _3793fd2f,
       name: "pageprys"
     }, {
       path: "/portfolio",
@@ -130,7 +130,7 @@ export function createRouter() {
       name: "updates"
     }, {
       path: "/",
-      component: _0df174c4,
+      component: _a7962d04,
       name: "index"
     }],
 
