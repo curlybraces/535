@@ -2,50 +2,41 @@
 <no-ssr>
   <div>
   <full-page ref="fullpage" id="fullpage" >
-          <div class="section splash">
-          <v-container>
-              <h1 class="sesheadline">About US</h1>
-          </v-container>
+          <div class="section aboutpage">
+
+            <div class="slide middleone text-xs-center">
+                <h1 class="sesheadline">About</h1>
+              <v-container>
+                <div id="moretop">
+                  <div class="headline-more">
+
+                  </div>
+                </div>
+
               <div id="more">
                 <div class="headline-more">
-                  <i class="fas fa-3x fa-chevron-up"></i><br>SWIPE UP
+
                 </div>
               </div>
+            </v-container>
           </div>
-          <div class="section splash">
-              <div class="slide middleone text-xs-center">
-                <v-container>
+
+          <div class="section blank">
+            <div class="slide middletwo text-xs-center">
+              <v-container>
                 <div id="moretop">
-                <div class="headline-more"><i class="fas fa-1x fa-chevron-left"> Swipe </i> <i class="fas fa-1x fa-chevron-right"></i>
+                  <div class="headline-more">
+
                   </div>
                 </div>
-                <img src="http://www.synergyefficiency.solutions/images/home/Icons/ESCOFinancing.png" /><br><br>
-                  <h2 class="sessubheadline">You can save your and money without putting any money up front!</h2>
-                  <div id="more">
-                    <div class="headline-more"><i class="fas fa-1x fa-chevron-down"></i>
-                    </div>
-                  </div>
-                </v-container>
-              </div>
 
-              <div class="slide middleone text-xs-center">
-                <v-container>
-                <div id="moretop">
-                <div class="headline-more"><i class="fas fa-1x fa-chevron-left"> Swipe </i> <i class="fas fa-1x fa-chevron-right"></i>
-                  </div>
+                <div id="more">
+
                 </div>
-                <img src="http://www.synergyefficieABOUT
-
-Sncy.solutions/images/home/Icons/LEEDCertified.png" />
-                  <h1 class="sesheadline">Get LEED/EDGE certified</h1>
-                  <div id="more">
-                    <div class="headline-more"><i class="fas fa-1x fa-chevron-down"></i>
-                    </div>
-                  </div>
-                </v-container>
-              </div>
-            </div>
-
+            </v-container>
+          </div>
+        </div>
+      </div>
 
       </full-page>
   </div>
@@ -64,18 +55,20 @@ export default {
 
 </script>
 <style>
-.splash {
+.aboutpage .middleone {
   background-image: url('/img/02home-about.jpg');
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.middleone, .intro {
-  background-color:#e5e5e5;
-  background-image: url('http://www.synergyefficiency.solutions/templates/rt_epsilon/images/patterns/poly2.png');
+
+.aboutpage .blank{
+  background-color: white;
   background-position: center top;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .splash::after {
   background-image: linear-gradient(to top, transparent 0%, black 170%);
   height: 500px;
@@ -85,8 +78,8 @@ export default {
   display:block;
   width:100%;
 }
-.splash .sesheadline {
-  font-size:45px;
+.aboutpage .sesheadline {
+  font-size:20px;
   font-weight:900;
   text-transform: uppercase;
   text-align: center;
@@ -143,9 +136,8 @@ export default {
   letter-spacing: 2px;
 }
 
-.middleone .sesheadline {
-  font-size:20px;
-  padding-top:20px;
+.aboutpage .sesheadline {
+  font-size:60px;
   padding-bottom:10px;
   width:80%;
   margin:0 auto 0;
