@@ -5,9 +5,11 @@ import '../assets/style/app.styl'
 
 import _6f6c098b from '../layouts/default.vue'
 import _7e152807 from '../layouts/default2.vue'
+import _77535bf3 from '../layouts/front.vue'
+import _7e1c65d8 from '../layouts/master.vue'
 import _fed40f46 from '../layouts/normal.vue'
 
-const layouts = { "_default": _6f6c098b,"_default2": _7e152807,"_normal": _fed40f46 }
+const layouts = { "_default": _6f6c098b,"_default2": _7e152807,"_front": _77535bf3,"_master": _7e1c65d8,"_normal": _fed40f46 }
 
 export default {
   head: {"title":"ses-dev-mode","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"ses development mode"},{"hid":"mobile-web-app-capable","name":"mobile-web-app-capable","content":"yes"},{"hid":"apple-mobile-web-app-title","name":"apple-mobile-web-app-title","content":"ses-dev-mode"},{"hid":"author","name":"author","content":"pryspry"},{"hid":"theme-color","name":"theme-color","content":"#fff"},{"hid":"og:type","name":"og:type","property":"og:type","content":"website"},{"hid":"og:title","name":"og:title","property":"og:title","content":"ses-dev-mode"},{"hid":"og:site_name","name":"og:site_name","property":"og:site_name","content":"ses-dev-mode"},{"hid":"og:description","name":"og:description","property":"og:description","content":"ses development mode"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Roboto:300,400,500,700|Material+Icons"},{"rel":"manifest","href":"\u002F_nuxt\u002Fmanifest.5b38cba5.json"},{"rel":"shortcut icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_64.9mld2VBMsQ$.png"},{"rel":"apple-touch-icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_512.9mld2VBMsQ$.png","sizes":"512x512"}],"style":[],"script":[],"htmlAttrs":{"lang":"en"}},

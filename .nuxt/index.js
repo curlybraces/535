@@ -16,6 +16,7 @@ import nuxt_plugin_vuetify_e5914fcc from 'nuxt_plugin_vuetify_e5914fcc' // Sourc
 import nuxt_plugin_fullpage_4279eb14 from 'nuxt_plugin_fullpage_4279eb14' // Source: ../plugins/fullpage (mode: 'client')
 import nuxt_plugin_vueparticles_a922149c from 'nuxt_plugin_vueparticles_a922149c' // Source: ../plugins/vue-particles (mode: 'client')
 import nuxt_plugin_vue3dmodel_62b85ded from 'nuxt_plugin_vue3dmodel_62b85ded' // Source: ../plugins/vue-3d-model.js (mode: 'client')
+import nuxt_plugin_vuetyper_4391995c from 'nuxt_plugin_vuetyper_4391995c' // Source: ../plugins/vue-typer.js (mode: 'client')
 
 // Component: <NoSsr>
 Vue.component(NoSsr.name, NoSsr)
@@ -141,6 +142,7 @@ async function createApp(ssrContext) {
     if (typeof nuxt_plugin_fullpage_4279eb14 === 'function') await nuxt_plugin_fullpage_4279eb14(app.context, inject)
     if (typeof nuxt_plugin_vueparticles_a922149c === 'function') await nuxt_plugin_vueparticles_a922149c(app.context, inject)
     if (typeof nuxt_plugin_vue3dmodel_62b85ded === 'function') await nuxt_plugin_vue3dmodel_62b85ded(app.context, inject)
+    if (typeof nuxt_plugin_vuetyper_4391995c === 'function') await nuxt_plugin_vuetyper_4391995c(app.context, inject)
   }
 
   // If server-side, wait for async component to be resolved first
