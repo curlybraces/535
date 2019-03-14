@@ -7,6 +7,7 @@ const _6941f827 = () => interopDefault(import('../pages/city.vue' /* webpackChun
 const _cbe75648 = () => interopDefault(import('../pages/index2.vue' /* webpackChunkName: "pages/index2" */))
 const _24ccbc4e = () => interopDefault(import('../pages/inspire.vue' /* webpackChunkName: "pages/inspire" */))
 const _1d92e16a = () => interopDefault(import('../pages/page.vue' /* webpackChunkName: "pages/page" */))
+const _459bf467 = () => interopDefault(import('../pages/pageprys.vue' /* webpackChunkName: "pages/pageprys" */))
 const _592a0574 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 Vue.use(Router)
@@ -103,6 +104,10 @@ export function createRouter() {
       path: "/page",
       component: _1d92e16a,
       name: "page"
+    }, {
+      path: "/pageprys",
+      component: _459bf467,
+      name: "pageprys"
     }, {
       path: "/",
       component: _592a0574,

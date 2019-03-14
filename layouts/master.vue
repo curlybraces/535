@@ -1,5 +1,5 @@
 <template>
-  <v-app class="normal">
+  <v-app class="master">
     <v-navigation-drawer v-model="drawer" :mini-variant="miniVariant" :clipped="clipped" fixed app>
       <div class="ses-logo-push">
         <a href="/"><img src="img/logosesfull.png" /></a>

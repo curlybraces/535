@@ -7,7 +7,7 @@
   </div>
           <div class="section splash">
           <v-container>
-              <h1 class="sesheadline">Enginering the Future Today</h1>
+              <h1 class="sesheadline">Enginering the Future, Today</h1>
               <h2 class="sessubheadline">We Are Synergy Efficiency Solutions</h2>
           </v-container>
               <div id="more">
@@ -122,7 +122,7 @@
 import Particles from '~/components/Particles.vue'
 
 export default {
-  layout: 'splash',
+  layout: 'front',
   components: {
     Particles
   }

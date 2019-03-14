@@ -1,8 +1,8 @@
 <template>
-  <v-app class="normal">
+  <v-app class="frontnav">
     <v-navigation-drawer v-model="drawer" :mini-variant="miniVariant" :clipped="clipped" fixed app>
       <div class="ses-logo-push">
-        <a href="/"><img src="img/logosesfull.png" /></a>
+        <a href="/"><img src="/img/logosesfull.png" /></a>
       </div>
       <v-list>
             <v-list-tile v-for="(item, i) in items" :key="i" :to="item.to" router exact>
@@ -16,7 +16,7 @@
       app
       :clipped-left="clipped"
     >
-    <div class="ses-logo"><a href="/"><img src="img/logoses.png" /></a></div>
+    <div class="ses-logo"><a href="/"><img src="/img/logoses.png" /></a></div>
     <v-spacer></v-spacer>
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
     </v-toolbar>
@@ -67,5 +67,22 @@ export default {
 
 </script>
 <style>
+.frontnav main.v-content {
+    padding-top: 0px !important;
+}
 
+.frontnav .theme--light.v-toolbar {
+    background-color: transparent;
+}
+.frontnav .v-toolbar {
+  box-shadow:none;
+}
+.frontnav .v-toolbar__content {
+    padding: 30px 20px 0px 20px;
+}
+.frontnav .v-list__tile__title {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 </style>

@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-navigation-drawer v-model="drawer" :mini-variant="miniVariant" :clipped="clipped" fixed class="frontnav" app>
+    <v-navigation-drawer v-model="drawer" :mini-variant="miniVariant" :clipped="clipped" fixed app>
       <div class="ses-logo-push">
         <a href="/"><img src="/img/logosesfull.png" /></a>
       </div>
@@ -66,23 +66,6 @@ export default {
 }
 
 </script>
-<style scoped>
-main.v-content {
-    padding-top: 0px !important;
-}
+<style>
 
-.theme--light.v-toolbar {
-    background-color: transparent;
-}
-.v-toolbar {
-  box-shadow:none;
-}
-.v-toolbar__content {
-    padding: 30px 20px 0px 20px;
-}
-.v-list__tile__title {
-  font-size: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
 </style>

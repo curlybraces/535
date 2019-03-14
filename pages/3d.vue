@@ -1,6 +1,12 @@
 <template>
 <no-ssr>
-  <model-obj src="/3d/7.obj" mtl="/3d/7.mtl"></model-obj>
+<v-container>
+ <v-layout>
+  <v-flex>
+   <model-obj src="/3d/7.obj" mtl="/3d/7.mtl"></model-obj>
+   </v-flex>
+  </v-layout>
+</v-container>
 </no-ssr>
 </template>
 <script>
