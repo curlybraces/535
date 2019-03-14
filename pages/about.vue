@@ -6,6 +6,7 @@
 
             <div class="slide middleone text-xs-center">
                 <h1 class="sesheadline">About</h1>
+                <h2 class="sessubheadline">More</h2>
               <v-container>
                 <div id="moretop">
                   <div class="headline-more">
@@ -23,6 +24,7 @@
 
           <div class="section blank">
             <div class="slide middletwo text-xs-center">
+              <h1 class="sesheadlineblue">STORY</h1>
               <v-container>
                 <div id="moretop">
                   <div class="headline-more">
@@ -90,8 +92,9 @@ export default {
   text-shadow: 2px 2px 2px #444;
   z-index: 99;
 }
-.splash .sessubheadline {
-  font-weight:400;
+.aboutpage .sessubheadline {
+  font-weight:900;
+  text-transform: uppercase;
   font-size:18px;
   color:#eee;
   text-align:center;
@@ -137,11 +140,20 @@ export default {
 }
 
 .aboutpage .sesheadline {
-  font-size:60px;
+  font-size:55px;
   padding-bottom:10px;
   width:80%;
   margin:0 auto 0;
 }
+
+.aboutpage .sesheadlineblue {
+  font-size:55px;
+  color: blue;
+  padding-bottom:400px;
+  width:80%;
+  margin:0 auto 0;
+}
+
 .about #more, .middleone #more .headline-more, .intro #more .headline-more {
   color:#222;
 }
