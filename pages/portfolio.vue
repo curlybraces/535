@@ -102,7 +102,7 @@ export default {
 </script>
 <style>
 .portfolio .middleone {
-  background-image: url('/img/plane.jpg');
+  background-image: url('/img/plans.jpg');
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -201,9 +201,9 @@ export default {
 .portfolio .swipe {
   font-weight:900;
   font-size: 12px;
-  color:#eee;
+  color:#000;
   position: absolute;
-  bottom: 40px;
+  bottom: 70px;
   padding-left: 196px;
 }
 
@@ -211,9 +211,9 @@ export default {
   font-weight:900;
   text-transform: uppercase;
   font-size: 25px;
-  color: #eee;
+  color: #000;
   position: absolute;
-  bottom: 60px;
+  bottom: 90px;
   padding-left: 196px;
 }
 

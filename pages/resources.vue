@@ -2,10 +2,10 @@
 <no-ssr>
   <div>
   <full-page ref="fullpage" id="fullpage" >
-          <div class="section updates">
+          <div class="section resources">
 
             <div class="slide middleone text-xs-center">
-                <h1 class="sesheadline">UPDATES</h1>
+                <h1 class="sesheadline">RESOURCE</h1>
                 <h2 class="formore">More</h2>
                 <h4 class="swipe"><-- swipe --></h4>
               <v-container>
@@ -25,7 +25,7 @@
 
           <div class="section blank">
             <div class="slide middletwo text-xs-center">
-              <h1 class="sesheadlineblue">UPDATES</h1>
+              <h1 class="sesheadlineblue">RESOURCE</h1>
               <v-container>
                 <div id="moretop">
                   <div class="headline-more">
@@ -78,14 +78,14 @@ export default {
 
 </script>
 <style>
-.updates .middleone {
-  background-image: url('/img/work.jpg');
+.resources .middleone {
+  background-image: url('/img/install.jpg');
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.updates .blank{
+.resources .blank{
   background-color: white;
   background-position: center top;
   background-repeat: no-repeat;
@@ -101,7 +101,7 @@ export default {
   display:block;
   width:100%;
 }
-.updates .sesheadline {
+.resources .sesheadline {
   font-size:20px;
   font-weight:900;
   text-transform: uppercase;
@@ -113,7 +113,7 @@ export default {
   text-shadow: 2px 2px 2px #444;
   z-index: 99;
 }
-.updates .sessubheadline {
+.resources .sessubheadline {
   font-weight:900;
   text-transform: uppercase;
   font-size:18px;
@@ -123,7 +123,7 @@ export default {
 #more {
   color: #eeeeee;
 }
-.updates #more, .splash #more, .intro #more {
+.resources #more, .splash #more, .intro #more {
   position:absolute;
   top:85%;
   margin:0 auto 0;
@@ -160,14 +160,14 @@ export default {
   letter-spacing: 2px;
 }
 
-.updates .sesheadline {
+.resources .sesheadline {
   font-size:55px;
   padding-bottom:10px;
   width:80%;
   margin:0 auto 0;
 }
 
-.updates .sesheadlineblue {
+.resources .sesheadlineblue {
   font-size:55px;
   color: #0047b3;
   padding-bottom:50px;
@@ -175,7 +175,7 @@ export default {
   margin:0 auto 0;
 }
 
-.updates .swipe {
+.resources .swipe {
   font-weight:900;
   font-size: 12px;
   color:#eee;
@@ -184,7 +184,7 @@ export default {
   padding-left: 196px;
 }
 
-.updates .formore {
+.resources .formore {
   font-weight:900;
   text-transform: uppercase;
   font-size: 25px;
@@ -194,13 +194,13 @@ export default {
   padding-left: 196px;
 }
 
-.updates #more, .middleone #more .headline-more, .intro #more .headline-more {
+.resources #more, .middleone #more .headline-more, .intro #more .headline-more {
   color:#222;
 }
 .fp-controlArrow.fp-prev,.fp-controlArrow.fp-next {
   display:none;
 }
-.updates {
+.resources {
   background:#fff;
 }
 

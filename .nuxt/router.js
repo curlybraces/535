@@ -10,6 +10,7 @@ const _54784ea6 = () => interopDefault(import('../pages/inspire.vue' /* webpackC
 const _4d43dbf3 = () => interopDefault(import('../pages/page.vue' /* webpackChunkName: "pages/page" */))
 const _0b62ad0f = () => interopDefault(import('../pages/pageprys.vue' /* webpackChunkName: "pages/pageprys" */))
 const _79a585d8 = () => interopDefault(import('../pages/portfolio.vue' /* webpackChunkName: "pages/portfolio" */))
+const _27ab3f71 = () => interopDefault(import('../pages/resources.vue' /* webpackChunkName: "pages/resources" */))
 const _8a11f77c = () => interopDefault(import('../pages/services.vue' /* webpackChunkName: "pages/services" */))
 const _bbeb76d4 = () => interopDefault(import('../pages/updates.vue' /* webpackChunkName: "pages/updates" */))
 const _0df174c4 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
@@ -120,6 +121,10 @@ export function createRouter() {
       path: "/portfolio",
       component: _79a585d8,
       name: "portfolio"
+    }, {
+      path: "/resources",
+      component: _27ab3f71,
+      name: "resources"
     }, {
       path: "/services",
       component: _8a11f77c,
