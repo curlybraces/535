@@ -2,11 +2,12 @@
 <no-ssr>
   <div>
   <full-page ref="fullpage" id="fullpage" >
-          <div class="section aboutpage">
+          <div class="section portfolio">
 
             <div class="slide middleone text-xs-center">
                 <h1 class="sesheadline">PORTFOLIO</h1>
-                <h2 class="sessubheadline">More</h2>
+                <h2 class="formore">More</h2>
+                <h4 class="swipe"><-- swipe --></h4>
               <v-container>
                 <div id="moretop">
                   <div class="headline-more">
@@ -28,7 +29,50 @@
               <v-container>
                 <div id="moretop">
                   <div class="headline-more">
+                  <v-container grid-list-md text-xs-center>
+                      <v-layout row wrap>
+                      <v-flex xs6>
+                        <v-card dark color="secondary">
+                          <v-card-text class="px-0">Portfolio 1</v-card-text>
+                        </v-card>
+                      </v-flex>
 
+                      <v-flex xs6>
+                        <v-card dark color="secondary">
+                          <v-card-text class="px-0">Portfolio 2</v-card-text>
+                        </v-card>
+                      </v-flex>
+                      </v-layout>
+
+                      <v-layout row wrap>
+                      <v-flex xs6>
+                        <v-card dark color="secondary">
+                          <v-card-text class="px-0">Portfolio 3</v-card-text>
+                        </v-card>
+                      </v-flex>
+
+                      <v-flex xs6>
+                        <v-card dark color="secondary">
+                          <v-card-text class="px-0">Portfolio 4</v-card-text>
+                        </v-card>
+                      </v-flex>
+                      </v-layout>
+
+                      <v-layout row wrap>
+                      <v-flex xs6>
+                        <v-card dark color="secondary">
+                          <v-card-text class="px-0">Portfolio 5</v-card-text>
+                        </v-card>
+                      </v-flex>
+
+                      <v-flex xs6>
+                        <v-card dark color="secondary">
+                          <v-card-text class="px-0">Portfolio 6</v-card-text>
+                        </v-card>
+                      </v-flex>
+                      </v-layout>
+
+                    </v-container>
                   </div>
                 </div>
 
@@ -57,14 +101,14 @@ export default {
 
 </script>
 <style>
-.aboutpage .middleone {
-  background-image: url('/img/02home-portfolio.jpg');
+.portfolio .middleone {
+  background-image: url('/img/plane.jpg');
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.aboutpage .blank{
+.portfolio .blank{
   background-color: white;
   background-position: center top;
   background-repeat: no-repeat;
@@ -80,7 +124,7 @@ export default {
   display:block;
   width:100%;
 }
-.aboutpage .sesheadline {
+.portfolio .sesheadline {
   font-size:20px;
   font-weight:900;
   text-transform: uppercase;
@@ -92,7 +136,7 @@ export default {
   text-shadow: 2px 2px 2px #444;
   z-index: 99;
 }
-.aboutpage .sessubheadline {
+.portfolio .sessubheadline {
   font-weight:900;
   text-transform: uppercase;
   font-size:18px;
@@ -102,7 +146,7 @@ export default {
 #more {
   color: #eeeeee;
 }
-.about #more, .splash #more, .intro #more {
+.portfolio #more, .splash #more, .intro #more {
   position:absolute;
   top:85%;
   margin:0 auto 0;
@@ -139,28 +183,47 @@ export default {
   letter-spacing: 2px;
 }
 
-.aboutpage .sesheadline {
+.portfolio .sesheadline {
   font-size:55px;
   padding-bottom:10px;
   width:80%;
   margin:0 auto 0;
 }
 
-.aboutpage .sesheadlineblue {
+.portfolio .sesheadlineblue {
   font-size:55px;
-  color: blue;
-  padding-bottom:500px;
+  color: #0047b3;
+  padding-bottom:50px;
   width:80%;
   margin:0 auto 0;
 }
 
-.about #more, .middleone #more .headline-more, .intro #more .headline-more {
+.portfolio .swipe {
+  font-weight:900;
+  font-size: 12px;
+  color:#eee;
+  position: absolute;
+  bottom: 40px;
+  padding-left: 196px;
+}
+
+.portfolio .formore {
+  font-weight:900;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #eee;
+  position: absolute;
+  bottom: 60px;
+  padding-left: 196px;
+}
+
+.portfolio #more, .middleone #more .headline-more, .intro #more .headline-more {
   color:#222;
 }
 .fp-controlArrow.fp-prev,.fp-controlArrow.fp-next {
   display:none;
 }
-.about {
+.portfolio {
   background:#fff;
 }
 

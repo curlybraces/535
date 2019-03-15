@@ -2,11 +2,12 @@
 <no-ssr>
   <div>
   <full-page ref="fullpage" id="fullpage" >
-          <div class="section aboutpage">
+          <div class="section services">
 
             <div class="slide middleone text-xs-center">
                 <h1 class="sesheadline">SERVICES</h1>
-                <h2 class="sessubheadline">More</h2>
+                <h2 class="formore">More</h2>
+                <h4 class="swipe"><-- swipe --></h4>
               <v-container>
                 <div id="moretop">
                   <div class="headline-more">
@@ -33,13 +34,18 @@
 
                         <v-flex xs12>
                           <v-card dark color="primary">
-                            <v-card-text class="px-0">Foto1</v-card-text>
+                            <v-card-text class="px-0">Foto 1</v-card-text>
                           </v-card>
                         </v-flex>
 
                         <v-flex xs12>
                           <v-card dark color="primary">
-                            <v-card-text class="px-0">Foto2</v-card-text>
+                            <v-card-text class="px-0">Foto 2</v-card-text>
+                          </v-card>
+                        </v-flex>
+                        <v-flex xs12>
+                          <v-card dark color="primary">
+                            <v-card-text class="px-0">Foto 3</v-card-text>
                           </v-card>
                         </v-flex>
                       </v-layout>
@@ -72,14 +78,14 @@ export default {
 
 </script>
 <style>
-.aboutpage .middleone {
+.services .middleone {
   background-image: url('/img/services.jpg');
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.aboutpage .blank{
+.services .blank{
   background-color: white;
   background-position: center top;
   background-repeat: no-repeat;
@@ -95,7 +101,7 @@ export default {
   display:block;
   width:100%;
 }
-.aboutpage .sesheadline {
+.services .sesheadline {
   font-size:20px;
   font-weight:900;
   text-transform: uppercase;
@@ -107,7 +113,7 @@ export default {
   text-shadow: 2px 2px 2px #444;
   z-index: 99;
 }
-.aboutpage .sessubheadline {
+.services .sessubheadline {
   font-weight:900;
   text-transform: uppercase;
   font-size:18px;
@@ -117,7 +123,7 @@ export default {
 #more {
   color: #eeeeee;
 }
-.about #more, .splash #more, .intro #more {
+.services #more, .splash #more, .intro #more {
   position:absolute;
   top:85%;
   margin:0 auto 0;
@@ -154,28 +160,47 @@ export default {
   letter-spacing: 2px;
 }
 
-.aboutpage .sesheadline {
+.services .sesheadline {
   font-size:55px;
   padding-bottom:10px;
   width:80%;
   margin:0 auto 0;
 }
 
-.aboutpage .sesheadlineblue {
+.services .swipe {
+  font-weight:900;
+  font-size: 12px;
+  color:#eee;
+  position: absolute;
+  bottom: 75px;
+  padding-left: 196px;
+}
+
+.services .formore {
+  font-weight:900;
+  text-transform: uppercase;
+  font-size: 25px;
+  color:#eee;
+  position: absolute;
+  bottom: 90px;
+  padding-left: 196px;
+}
+
+.services .sesheadlineblue {
   font-size:55px;
-  color: blue;
+  color: #0047b3;
   padding-bottom:40px;
   width:80%;
   margin:0 auto 0;
 }
 
-.about #more, .middleone #more .headline-more, .intro #more .headline-more {
+.services #more, .middleone #more .headline-more, .intro #more .headline-more {
   color:#222;
 }
 .fp-controlArrow.fp-prev,.fp-controlArrow.fp-next {
   display:none;
 }
-.about {
+.services {
   background:#fff;
 }
 
