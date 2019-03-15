@@ -17,6 +17,7 @@
     "nuxt": "^2.4.0",
     "vue-3d-model": "^1.0.2",
     "vue-fullpage.js": "^0.1.2",
+    "vue-scrollable-container": "^1.7.0",
     "vue-typer": "^1.2.0",
     "vuetify": "^1.5.5",
     "vuetify-loader": "^1.2.1"
