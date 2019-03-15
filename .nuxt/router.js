@@ -4,6 +4,8 @@ import { interopDefault } from './utils'
 
 const _1186d1f5 = () => interopDefault(import('../pages/3d.vue' /* webpackChunkName: "pages/3d" */))
 const _4d612a4e = () => interopDefault(import('../pages/about.vue' /* webpackChunkName: "pages/about" */))
+const _dcc741fe = () => interopDefault(import('../pages/careers.vue' /* webpackChunkName: "pages/careers" */))
+const _3c3f2b7a = () => interopDefault(import('../pages/casestudies.vue' /* webpackChunkName: "pages/casestudies" */))
 const _75617662 = () => interopDefault(import('../pages/city.vue' /* webpackChunkName: "pages/city" */))
 const _27f91784 = () => interopDefault(import('../pages/index2.vue' /* webpackChunkName: "pages/index2" */))
 const _54784ea6 = () => interopDefault(import('../pages/inspire.vue' /* webpackChunkName: "pages/inspire" */))
@@ -97,6 +99,14 @@ export function createRouter() {
       path: "/about",
       component: _4d612a4e,
       name: "about"
+    }, {
+      path: "/careers",
+      component: _dcc741fe,
+      name: "careers"
+    }, {
+      path: "/casestudies",
+      component: _3c3f2b7a,
+      name: "casestudies"
     }, {
       path: "/city",
       component: _75617662,

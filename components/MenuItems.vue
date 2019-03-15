@@ -26,16 +26,16 @@ export default {
                 to: '/portfolio',
             }, {
                 title: 'Resource',
-                to: '/page',
+                to: '/resources',
             }, {
                 title: 'Case Study',
-                to: '/page',
+                to: '/casestudies',
             }, {
                 title: 'Blog',
                 to: '/updates',
             }, {
                 title: 'Career',
-                to: '/page',
+                to: '/careers',
             }],
             miniVariant: false,
             right: true,
