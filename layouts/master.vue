@@ -2,7 +2,7 @@
   <v-app class="master">
     <v-navigation-drawer v-model="drawer" :mini-variant="miniVariant" :clipped="clipped" fixed app>
       <div class="ses-logo-push">
-        <a href="/"><img src="img/logosesfull.png" /></a>
+        <nuxt-link to="/"><img src="img/logosesfull.png" /></nuxt-link>
       </div>
       <MenuItems />
     </v-navigation-drawer>
@@ -10,7 +10,7 @@
       app
       :clipped-left="clipped"
     >
-    <div class="ses-logo"><a href="/"><img src="img/logoses.png" /></a></div>
+    <div class="ses-logo"><nuxt-link href="/"><img src="img/logoses.png" /></nuxt-link></div>
     <v-spacer></v-spacer>
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
     </v-toolbar>

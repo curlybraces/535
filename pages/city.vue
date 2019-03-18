@@ -4,9 +4,13 @@
 </no-ssr>
 </template>
 <script>
-import { ModelObj } from 'vue-3d-model'
+import {
+  ModelObj
+} from 'vue-3d-model'
 
 export default {
- components: { ModelObj }
+  components: {
+    ModelObj
+  }
 }
 </script>

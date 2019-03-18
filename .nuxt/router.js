@@ -2,20 +2,20 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
-const _1186d1f5 = () => interopDefault(import('../pages/3d.vue' /* webpackChunkName: "pages/3d" */))
-const _4d612a4e = () => interopDefault(import('../pages/about.vue' /* webpackChunkName: "pages/about" */))
-const _dcc741fe = () => interopDefault(import('../pages/careers.vue' /* webpackChunkName: "pages/careers" */))
-const _3c3f2b7a = () => interopDefault(import('../pages/casestudies.vue' /* webpackChunkName: "pages/casestudies" */))
-const _75617662 = () => interopDefault(import('../pages/city.vue' /* webpackChunkName: "pages/city" */))
-const _27f91784 = () => interopDefault(import('../pages/index2.vue' /* webpackChunkName: "pages/index2" */))
-const _54784ea6 = () => interopDefault(import('../pages/inspire.vue' /* webpackChunkName: "pages/inspire" */))
-const _4d43dbf3 = () => interopDefault(import('../pages/page.vue' /* webpackChunkName: "pages/page" */))
-const _0b62ad0f = () => interopDefault(import('../pages/pageprys.vue' /* webpackChunkName: "pages/pageprys" */))
-const _79a585d8 = () => interopDefault(import('../pages/portfolio.vue' /* webpackChunkName: "pages/portfolio" */))
-const _27ab3f71 = () => interopDefault(import('../pages/resources.vue' /* webpackChunkName: "pages/resources" */))
-const _8a11f77c = () => interopDefault(import('../pages/services.vue' /* webpackChunkName: "pages/services" */))
-const _bbeb76d4 = () => interopDefault(import('../pages/updates.vue' /* webpackChunkName: "pages/updates" */))
-const _0df174c4 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _507eba15 = () => interopDefault(import('../pages/3d.vue' /* webpackChunkName: "pages/3d" */))
+const _e705e28e = () => interopDefault(import('../pages/about.vue' /* webpackChunkName: "pages/about" */))
+const _2ff08ae1 = () => interopDefault(import('../pages/careers.vue' /* webpackChunkName: "pages/careers" */))
+const _bf08b3ba = () => interopDefault(import('../pages/casestudies.vue' /* webpackChunkName: "pages/casestudies" */))
+const _25eda4ef = () => interopDefault(import('../pages/city.vue' /* webpackChunkName: "pages/city" */))
+const _4b0020b8 = () => interopDefault(import('../pages/index2.vue' /* webpackChunkName: "pages/index2" */))
+const _1a670af4 = () => interopDefault(import('../pages/inspire.vue' /* webpackChunkName: "pages/inspire" */))
+const _a43b87da = () => interopDefault(import('../pages/page.vue' /* webpackChunkName: "pages/page" */))
+const _3793fd2f = () => interopDefault(import('../pages/pageprys.vue' /* webpackChunkName: "pages/pageprys" */))
+const _1d25f0f4 = () => interopDefault(import('../pages/portfolio.vue' /* webpackChunkName: "pages/portfolio" */))
+const _fcb8195e = () => interopDefault(import('../pages/resources.vue' /* webpackChunkName: "pages/resources" */))
+const _31af573c = () => interopDefault(import('../pages/services.vue' /* webpackChunkName: "pages/services" */))
+const _405e7076 = () => interopDefault(import('../pages/updates.vue' /* webpackChunkName: "pages/updates" */))
+const _a7962d04 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 Vue.use(Router)
 
@@ -93,59 +93,59 @@ export function createRouter() {
 
     routes: [{
       path: "/3d",
-      component: _1186d1f5,
+      component: _507eba15,
       name: "3d"
     }, {
       path: "/about",
-      component: _4d612a4e,
+      component: _e705e28e,
       name: "about"
     }, {
       path: "/careers",
-      component: _dcc741fe,
+      component: _2ff08ae1,
       name: "careers"
     }, {
       path: "/casestudies",
-      component: _3c3f2b7a,
+      component: _bf08b3ba,
       name: "casestudies"
     }, {
       path: "/city",
-      component: _75617662,
+      component: _25eda4ef,
       name: "city"
     }, {
       path: "/index2",
-      component: _27f91784,
+      component: _4b0020b8,
       name: "index2"
     }, {
       path: "/inspire",
-      component: _54784ea6,
+      component: _1a670af4,
       name: "inspire"
     }, {
       path: "/page",
-      component: _4d43dbf3,
+      component: _a43b87da,
       name: "page"
     }, {
       path: "/pageprys",
-      component: _0b62ad0f,
+      component: _3793fd2f,
       name: "pageprys"
     }, {
       path: "/portfolio",
-      component: _79a585d8,
+      component: _1d25f0f4,
       name: "portfolio"
     }, {
       path: "/resources",
-      component: _27ab3f71,
+      component: _fcb8195e,
       name: "resources"
     }, {
       path: "/services",
-      component: _8a11f77c,
+      component: _31af573c,
       name: "services"
     }, {
       path: "/updates",
-      component: _bbeb76d4,
+      component: _405e7076,
       name: "updates"
     }, {
       path: "/",
-      component: _0df174c4,
+      component: _a7962d04,
       name: "index"
     }],
 

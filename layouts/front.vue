@@ -2,7 +2,7 @@
   <v-app class="frontnav">
     <v-navigation-drawer v-model="drawer" :mini-variant="miniVariant" :clipped="clipped" fixed app>
       <div class="ses-logo-push">
-        <a href="/"><img src="/img/logosesfull.png" /></a>
+        <nuxt-link to="/"><img src="/img/logosesfull.png" /></nuxt-link>
       </div>
       <MenuItems />
     </v-navigation-drawer>
