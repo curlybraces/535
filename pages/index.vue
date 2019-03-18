@@ -25,7 +25,7 @@
         </v-container>
         <div id="ses_more">
           <div class="ses_headline-more">
-            <i class="fas fa-3x fa-chevron-down"></i>
+            <i class="fas fa-2x fa-chevron-up"></i>
           </div>
         </div>
       </div>
@@ -37,7 +37,7 @@
           </v-container>
           <div id="ses_more">
             <div class="ses_headline-more">
-              <nuxt-link to="/about" class="ses_link">: About</nuxt-link>
+              <nuxt-link to="/about" class="ses_link"><i class="fas fa-1x fa-chevron-right"></i> Swipe</nuxt-link>
             </div>
           </div>
         </div>
@@ -48,7 +48,7 @@
           </v-container>
           <div id="ses_more">
             <div class="ses_headline-more">
-              <nuxt-link to="/about">About</nuxt-link>
+            <nuxt-link to="/about" class="ses_link"><i class="fas fa-1x fa-chevron-right"></i> Swipe</nuxt-link>
             </div>
           </div>
         </div>
@@ -59,7 +59,7 @@
           </v-container>
           <div id="ses_more">
             <div class="ses_headline-more">
-              <nuxt-link to="/about">About</nuxt-link>
+            <nuxt-link to="/about" class="ses_link"><i class="fas fa-1x fa-chevron-right"></i> Swipe</nuxt-link>
             </div>
           </div>
         </div>

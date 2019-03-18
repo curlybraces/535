@@ -10,7 +10,6 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_swplugin_431187f9 from 'nuxt_plugin_swplugin_431187f9' // Source: ./sw.plugin.js (mode: 'client')
 import nuxt_plugin_nuxticons_1dcbb2e8 from 'nuxt_plugin_nuxticons_1dcbb2e8' // Source: ./nuxt-icons.js (mode: 'all')
 import nuxt_plugin_axios_aa301b40 from 'nuxt_plugin_axios_aa301b40' // Source: ./axios.js (mode: 'all')
 import nuxt_plugin_vuetify_e5914fcc from 'nuxt_plugin_vuetify_e5914fcc' // Source: ../plugins/vuetify (mode: 'all')
@@ -18,6 +17,7 @@ import nuxt_plugin_fullpage_4279eb14 from 'nuxt_plugin_fullpage_4279eb14' // Sou
 import nuxt_plugin_vueparticles_a922149c from 'nuxt_plugin_vueparticles_a922149c' // Source: ../plugins/vue-particles (mode: 'client')
 import nuxt_plugin_vue3dmodel_62b85ded from 'nuxt_plugin_vue3dmodel_62b85ded' // Source: ../plugins/vue-3d-model.js (mode: 'client')
 import nuxt_plugin_vuetyper_4391995c from 'nuxt_plugin_vuetyper_4391995c' // Source: ../plugins/vue-typer.js (mode: 'client')
+import nuxt_plugin_vuescrollablecontainer_06d0a082 from 'nuxt_plugin_vuescrollablecontainer_06d0a082' // Source: ../plugins/vue-scrollable-container.js (mode: 'client')
 
 // Component: <NoSsr>
 Vue.component(NoSsr.name, NoSsr)
@@ -140,11 +140,11 @@ async function createApp(ssrContext) {
   if (typeof nuxt_plugin_vuetify_e5914fcc === 'function') await nuxt_plugin_vuetify_e5914fcc(app.context, inject)
 
   if (process.client) {
-    if (typeof nuxt_plugin_swplugin_431187f9 === 'function') await nuxt_plugin_swplugin_431187f9(app.context, inject)
     if (typeof nuxt_plugin_fullpage_4279eb14 === 'function') await nuxt_plugin_fullpage_4279eb14(app.context, inject)
     if (typeof nuxt_plugin_vueparticles_a922149c === 'function') await nuxt_plugin_vueparticles_a922149c(app.context, inject)
     if (typeof nuxt_plugin_vue3dmodel_62b85ded === 'function') await nuxt_plugin_vue3dmodel_62b85ded(app.context, inject)
     if (typeof nuxt_plugin_vuetyper_4391995c === 'function') await nuxt_plugin_vuetyper_4391995c(app.context, inject)
+    if (typeof nuxt_plugin_vuescrollablecontainer_06d0a082 === 'function') await nuxt_plugin_vuescrollablecontainer_06d0a082(app.context, inject)
   }
 
   // If server-side, wait for async component to be resolved first
