@@ -5,9 +5,7 @@
       <div id="ses_particles">
         <particles />
       </div>
-
-      <!-- Splash -->
-      <div class="section ses_splash ses_homecover">
+      <div class="section ses_splash">
         <v-container>
           <h1 class="ses_headline">Enginering the Future, Today</h1>
           <h2 class="ses_subheadline">We Are Synergy Efficiency Solutions</h2>
@@ -19,9 +17,19 @@
           </div>
         </div>
       </div>
-
-      <!-- Intro -->
-      <div class="section">
+      <div class="section ses_intro text-xs-center">
+        <v-container>
+          <img src="/img/favicon.png" width="200px" />
+          <p>We shifted gears since 2018 and focused more on what we could do to reduce the energy usage in buildings.</p>
+          <p>We understand that now, more than ever, businesses and other enterprises across every industry are looking for new innovative ways to cut costs.</p>
+        </v-container>
+        <div id="ses_more">
+          <div class="ses_headline-more">
+            <i class="fas fa-2x fa-chevron-up"></i>
+          </div>
+        </div>
+      </div>
+      <div class="section ">
         <div class="slide ses_middleone text-xs-center">
           <v-container>
             <img src="http://www.synergyefficiency.solutions/images/home/Icons/ESCOFinancing.png" /><br><br>
@@ -36,11 +44,11 @@
         <div class="slide ses_middleone text-xs-center">
           <v-container>
             <img src="http://www.synergyefficiency.solutions/images/Benefits/building-comfort.png" />
-            <h1 class="ses_headline">You can increase the comfort levels in your building</h1>
+            <h1 class="ses_headline">You Can Increase the Comfort Levels in Your building</h1>
           </v-container>
           <div id="ses_more">
             <div class="ses_headline-more">
-              <nuxt-link to="/about" class="ses_link"><i class="fas fa-1x fa-chevron-right"></i> Swipe</nuxt-link>
+            <nuxt-link to="/about" class="ses_link"><i class="fas fa-1x fa-chevron-right"></i> Swipe</nuxt-link>
             </div>
           </div>
         </div>
@@ -51,26 +59,11 @@
           </v-container>
           <div id="ses_more">
             <div class="ses_headline-more">
-              <nuxt-link to="/about" class="ses_link"><i class="fas fa-1x fa-chevron-right"></i> Swipe</nuxt-link>
+            <nuxt-link to="/about" class="ses_link"><i class="fas fa-1x fa-chevron-right"></i> Swipe</nuxt-link>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- About -->
-      <div class="section ses_splash ses_aboutcover">
-        <v-container>
-          <h1 class="ses_headline">About</h1>
-          <h2 class="ses_subheadline">We Are Synergy Efficiency Solutions</h2>
-        </v-container>
-        <div id="ses_more">
-          <div class="ses_headline-more">
-            <span class="hidden-sm-and-down"><i class="fas fa-3x fa-chevron-down"></i><br>SCROLL DOWN</span>
-            <span class="hidden-sm-and-up"><i class="fas fa-3x fa-chevron-up"></i><br>SWIPE UP</span>
-          </div>
-        </div>
-      </div>
-
     </full-page>
   </div>
 </no-ssr>
@@ -86,20 +79,12 @@ export default {
 }
 </script>
 <style>
-.ses_splash.ses_homecover {
+.ses_splash {
   background-image: url('/img/home.jpg');
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.ses_splash.ses_aboutcover {
-  background-image: url('/img/about.jpg');
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-
 
 .ses_middleone,
 .ses_intro {
@@ -216,7 +201,7 @@ export default {
 }
 
 .ses_link {
-  text-decoration: none;
-  color: #333;
-}
+  text-decoration:none;
+  color:#333;
+  }
 </style>

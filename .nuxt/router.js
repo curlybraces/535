@@ -8,6 +8,7 @@ const _2ff08ae1 = () => interopDefault(import('../pages/careers.vue' /* webpackC
 const _bf08b3ba = () => interopDefault(import('../pages/casestudies.vue' /* webpackChunkName: "pages/casestudies" */))
 const _25eda4ef = () => interopDefault(import('../pages/city.vue' /* webpackChunkName: "pages/city" */))
 const _4b0020b8 = () => interopDefault(import('../pages/index2.vue' /* webpackChunkName: "pages/index2" */))
+const _4ae3f1b6 = () => interopDefault(import('../pages/index3.vue' /* webpackChunkName: "pages/index3" */))
 const _1a670af4 = () => interopDefault(import('../pages/inspire.vue' /* webpackChunkName: "pages/inspire" */))
 const _a43b87da = () => interopDefault(import('../pages/page.vue' /* webpackChunkName: "pages/page" */))
 const _3793fd2f = () => interopDefault(import('../pages/pageprys.vue' /* webpackChunkName: "pages/pageprys" */))
@@ -115,6 +116,10 @@ export function createRouter() {
       path: "/index2",
       component: _4b0020b8,
       name: "index2"
+    }, {
+      path: "/index3",
+      component: _4ae3f1b6,
+      name: "index3"
     }, {
       path: "/inspire",
       component: _1a670af4,
