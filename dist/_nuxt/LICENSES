@@ -69,3 +69,19 @@
  */
 
 /*! vue-scrollable-container v1.7.0 inotom (http://www.serendip.ws/) | MIT */
+
+/**
+* Customized version of iScroll.js 0.1.1
+* It fixes bugs affecting its integration with fullpage.js
+* @license
+*/
+
+/*! iScroll v5.2.0 ~ (c) 2008-2016 Matteo Spinelli ~ http://cubiq.org/license */
+
+/*!
+* Scrolloverflow 2.0.2 module for fullPage.js >= 3
+* https://github.com/alvarotrigo/fullPage.js
+* @license MIT licensed
+*
+* Copyright (C) 2015 alvarotrigo.com - A project by Alvaro Trigo
+*/
