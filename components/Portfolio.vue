@@ -9,32 +9,27 @@
     </v-container>
   </div>
 
-  <!-- Portfolio 1 -->
-  <div class="slide ses_coverpageporto text-xs-center" id="section0">
-    <v-container class="ses_portoitem">
-      <h1 class="ses_headline">Universitas Multimedia Nusantara</h1>
+    <!-- Portfolio 1 -->
+    <div id="section0" class="slide text-xs-center">
+    <v-container>
+      <h1 class="ses_headline">Porto 1</h1>
       <p class="font-weight-light white--text subtitle mb-2">South-East Asia's Most Energy Efficient Building</p>
-    </v-container>
-    <div id="videocontainer">
-      <video id="myVideo" loop muted data-autoplay>
-        <source src="/video/video1.mp4" type="video/mp4">
-        <source src="/video/video1.webm" type="video/webm">
-      </video>
-      </div>
-  </div>
+      </v-container>
+    </div>
+
 
   <!-- Portfolio 2 -->
   <div class="slide ses_coverpageporto text-xs-center" id="section0">
+  <div id="videocontainer" >
     <v-container class="ses_portoitem">
       <h1 class="ses_headline">Universitas Multimedia Nusantara</h1>
       <p class="font-weight-light white--text subtitle mb-2">South-East Asia's Most Energy Efficient Building</p>
-    </v-container>
-    <div id="videocontainer">
     <video id="myVideo2" loop muted data-autoplay>
       <source src="/video/video2.mp4" type="video/mp4">
       <source src="/video/video2.webm" type="video/webm">
     </video>
-    </div>
+    </v-container>
+  </div>
   </div>
 
   <!-- Portfolio 3 -->
@@ -85,34 +80,19 @@ export default {
 }
 
 #videocontainer {
-  position:absolute;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-size: 100% 100%;
-  background-position: center center;
-  background-size: contain;
-  z-index: -1;
-  }
-#myVideo {
-  position: relative;
-
+  position:relative;
 }
 
 #myVideo2 {
-  position: relative;
-  right: 0;
-  bottom: 0;
+  right:0;
+  position:absolute;
   top: 0;
   width: 100%;
   height: 100%;
   background-size: 100% 100%;
   background-position: center center;
-  background-size: contain;
-  z-index: -1;
-}
+  background-size: cover;
+  }
 
 video::-webkit-media-controls {
   display: none !important;

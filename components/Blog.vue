@@ -1,9 +1,9 @@
 <template lang="html">
-<!-- Portfolio -->
+<!-- Blog -->
 <div class="section">
-  <div class="slide ses_coverportfolio text-xs-center">
+  <div class="slide ses_coverblog text-xs-center">
     <v-container>
-      <h1 class="ses_headline">Portfolio</h1>
+      <h1 class="ses_headline">Blog</h1>
       <h2 class="ses_subheadline">More</h2>
     </v-container>
   </div>
@@ -11,7 +11,7 @@
   <v-container id="scroll-target" style="max-height: 600px" class="scroll-y ses_scrollable">
     <v-layout v-scroll:#scroll-target="" column style="height: 1000px" pl-5 pr-5>
 
-      <!-- Portolio 1 -->
+      <!-- Blog 1 -->
       <v-dialog v-model="dialogA" fullscreen hide-overlay transition="dialog-bottom-transition">
       <template v-slot:activator="{ on }">
 
@@ -25,7 +25,7 @@
         >
           <v-img
             :aspect-ratio="16/9"
-            src="/img/portfolio_01_UMN.jpg"
+            src="/img/blog.jpg"
           >
             <v-expand-transition>
               <div
@@ -33,7 +33,7 @@
                 class="d-flex transition-fast-in-fast-out green darken-2 v-card--reveal title white--text"
                 style="height: 100%;"
               >
-                Learn More
+                Read More
               </div>
             </v-expand-transition>
           </v-img>
@@ -98,7 +98,7 @@
         >
           <v-img
             :aspect-ratio="16/9"
-            src="/img/portfolio_02_IIECC.jpg"
+            src="/img/blog.jpg"
           >
             <v-expand-transition>
               <div
@@ -106,7 +106,7 @@
                 class="d-flex transition-fast-in-fast-out green darken-2 v-card--reveal title white--text"
                 style="height: 100%;"
               >
-                Learn More
+                Read More
               </div>
             </v-expand-transition>
           </v-img>
@@ -131,7 +131,7 @@
         >
           <v-img
             :aspect-ratio="16/9"
-            src="/img/portfolio_03_Herman_Miller.jpg"
+            src="/img/blog.jpg"
           >
             <v-expand-transition>
               <div
@@ -139,7 +139,7 @@
                 class="d-flex transition-fast-in-fast-out green darken-4 v-card--reveal title white--text"
                 style="height: 100%;"
               >
-                Learn More
+                Read More
               </div>
             </v-expand-transition>
           </v-img>
@@ -164,7 +164,7 @@
         >
           <v-img
             :aspect-ratio="16/9"
-            src="/img/portfolio_04_Nagan_Raya.jpg"
+            src="/img/blog.jpg"
           >
             <v-expand-transition>
               <div
@@ -172,7 +172,7 @@
                 class="d-flex transition-fast-in-fast-out green darken-2 v-card--reveal title white--text"
                 style="height: 100%;"
               >
-                Learn More
+                Read More
               </div>
             </v-expand-transition>
           </v-img>
