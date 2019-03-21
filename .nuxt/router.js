@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
+const _48918185 = () => interopDefault(import('../pages/01.vue' /* webpackChunkName: "pages/01" */))
 const _507eba15 = () => interopDefault(import('../pages/3d.vue' /* webpackChunkName: "pages/3d" */))
 const _e705e28e = () => interopDefault(import('../pages/about.vue' /* webpackChunkName: "pages/about" */))
 const _2ff08ae1 = () => interopDefault(import('../pages/careers.vue' /* webpackChunkName: "pages/careers" */))
@@ -16,6 +17,7 @@ const _1d25f0f4 = () => interopDefault(import('../pages/portfolio.vue' /* webpac
 const _fcb8195e = () => interopDefault(import('../pages/resources.vue' /* webpackChunkName: "pages/resources" */))
 const _31af573c = () => interopDefault(import('../pages/services.vue' /* webpackChunkName: "pages/services" */))
 const _405e7076 = () => interopDefault(import('../pages/updates.vue' /* webpackChunkName: "pages/updates" */))
+const _8f021aa8 = () => interopDefault(import('../pages/videobg.vue' /* webpackChunkName: "pages/videobg" */))
 const _a7962d04 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 Vue.use(Router)
@@ -93,6 +95,10 @@ export function createRouter() {
     scrollBehavior,
 
     routes: [{
+      path: "/01",
+      component: _48918185,
+      name: "01"
+    }, {
       path: "/3d",
       component: _507eba15,
       name: "3d"
@@ -148,6 +154,10 @@ export function createRouter() {
       path: "/updates",
       component: _405e7076,
       name: "updates"
+    }, {
+      path: "/videobg",
+      component: _8f021aa8,
+      name: "videobg"
     }, {
       path: "/",
       component: _a7962d04,
