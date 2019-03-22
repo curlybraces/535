@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
   <div>
   <div class="slide ses_coverabout text-xs-center">
     <v-container>
@@ -37,9 +37,3 @@
   </div>
   </div>
 </template>
-
-<script>
-</script>
-
-<style>
-</style>

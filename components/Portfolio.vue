@@ -1,109 +1,95 @@
 <template>
 <div>
 
-  <!-- Portfolio Index -->
-  <div class="slide ses_coverportfolio text-xs-center">
-    <v-container>
-      <h1 class="ses_headline">Portfolio</h1>
-      <h2 class="ses_subheadline">More</h2>
-    </v-container>
-  </div>
+<!-- Portfolio Index -->
+<div class="slide ses_coverportfolio text-xs-center">
+  <v-container>
+    <h1 class="ses_headline">Portfolio</h1>
+    <h2 class="ses_subheadline">More</h2>
+  </v-container>
+</div>
 
-  <!-- Portfolio 1 -->
-  <div class="slide ses_coverportfolio text-xs-center">
-    <v-container>
-      <h1 class="ses_headline">Portfolio</h1>
-      <h2 class="ses_subheadline">More</h2>
-    </v-container>
-  </div>
-
-  <!-- Portfolio 2 -->
-  <div class="slide ses_coverpageporto text-xs-center" id="section0">
-    <div id="videocontainer">
-      <v-container class="ses_portoitem">
-        <h1 class="ses_headline">Universitas Multimedia Nusantara</h1>
-        <p class="font-weight-light white--text subtitle mb-2">South-East Asia's Most Energy Efficient Building</p>
-        <video id="myVideo2" loop muted data-autoplay>
-          <source src="/video/video2.mp4" type="video/mp4">
-          <source src="/video/video2.webm" type="video/webm">
-        </video>
-      </v-container>
+<div id="section0">
+  <div class="slide">
+      <video id="ses_media_porto" loop muted data-autoplay>
+        <source src="/video/video1.mp4" type="video/mp4">
+        <source src="/video/video1.webm" type="video/webm">
+      </video>
     </div>
   </div>
 
-  <!-- Portfolio 3 -->
-  <div class="slide ses_coverportfolio text-xs-center">
-    <v-container>
-      <h1 class="ses_headline">Portfolio</h1>
-      <h2 class="ses_subheadline">More</h2>
-    </v-container>
+    <div id="section0">
+    <div class="slide">
+      <video id="ses_media_porto" loop muted data-autoplay>
+        <source src="/video/video2.mp4" type="video/mp4">
+        <source src="/video/video2.webm" type="video/webm">
+      </video>
+    </div>
   </div>
 
-  <!-- Portfolio 4 -->
-  <div class="slide ses_coverportfolio text-xs-center">
-    <v-container>
-      <h1 class="ses_headline">Portfolio</h1>
-      <h2 class="ses_subheadline">More</h2>
-    </v-container>
+    <div id="section0">
+    <div class="slide">
+      <video id="ses_media_porto" loop muted data-autoplay>
+        <source src="/video/video3.mp4" type="video/mp4">
+        <source src="/video/video3.webm" type="video/webm">
+      </video>
+    </div>
   </div>
+
+
+          <div id="section0">
+          <div class="slide">
+            <video id="ses_media_porto" loop muted data-autoplay>
+              <source src="/video/video4.mp4" type="video/mp4">
+              <source src="/video/video4.webm" type="video/webm">
+            </video>
+          </div>
+        </div>
+
 </div>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      dialogA: false,
-      options: {
-        normalScrollElements: '.ses_scrollable',
-        verticalCentered: true,
-      }
-    }
-  },
-  methods: {
-    afterLoad() {}
-  }
-}
+
 </script>
 
-<style scoped>
+<style>
+
+#ses_media_porto {display: block;}
+
 .ses_coverportfolio {
-  z-index: 4;
-}
-
-/*solves problem with overflowing video in Mac with Chrome */
-#section0 {
-  overflow: hidden;
-}
-
-#videocontainer {
-  position: relative;
-}
-
-#myVideo2 {
-  right: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-size: 100% 100%;
-  background-position: center center;
+  background-image: url('/img/portfolio.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
   background-size: cover;
-}
+  color: #f0f0f0;
+  }
 
-video::-webkit-media-controls {
-  display: none !important;
-}
+	.section{
+		text-align:center;
+		overflow: hidden;
+	}
+	#myVideo{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		top:0;
+		right:0;
+		width: 100%;
+		height: 100%;
+		background-size: 100% 100%;
+ 		background-color: black; /* in case the video doesn't fit the whole page*/
+  		background-image: /* our video */;
+  		background-position: center center;
+  		background-size: contain;
+   		object-fit: cover; /*cover video background */
+   		z-index:3;
+	}
 
-.ses_coverpageporto {
-  background-color: none;
-  background-image: none;
-  background-position: center center;
-  background-repeat: repeat;
-
-}
-
-.ses_portoitem {
-  color: #fff;
-}
+	#section0 {
+		overflow: hidden;
+	}
+	video::-webkit-media-controls {
+	  display:none !important;
+	}
 </style>

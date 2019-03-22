@@ -13,8 +13,7 @@
 
     <div id="section0">
       <div class="slide">
-
-          <video loop muted data-autoplay>
+          <video id="ses_media_porto" loop muted data-autoplay>
       			<source src="/video/video1.mp4" type="video/mp4">
       			<source src="/video/video1.webm" type="video/webm">
       		</video>
@@ -23,7 +22,7 @@
 
         <div id="section0">
         <div class="slide">
-          <video loop muted data-autoplay>
+          <video id="ses_media_porto" loop muted data-autoplay>
       			<source src="/video/video2.mp4" type="video/mp4">
       			<source src="/video/video2.webm" type="video/webm">
       		</video>
@@ -32,14 +31,24 @@
 
         <div id="section0">
         <div class="slide">
-          <video loop muted data-autoplay>
+          <video id="ses_media_porto" loop muted data-autoplay>
       			<source src="/video/video3.mp4" type="video/mp4">
       			<source src="/video/video3.webm" type="video/webm">
       		</video>
         </div>
       </div>
 
-  	</div>
+
+              <div id="section0">
+              <div class="slide">
+                <video id="ses_media_porto" loop muted data-autoplay>
+            			<source src="/video/video4.mp4" type="video/mp4">
+            			<source src="/video/video4.webm" type="video/webm">
+            		</video>
+              </div>
+            </div>
+
+              	</div>
   </full-page>
   </div>
 </template>
@@ -51,6 +60,8 @@ export default {
 </script>
 
 <style>
+#ses_media_porto {display: block;}
+
 .ses_coverportfolio {
   background-image: url('/img/portfolio.jpg');
   background-position: center top;
