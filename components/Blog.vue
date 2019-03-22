@@ -1,5 +1,5 @@
 <template>
-<div class="section">
+<div>
   <div class="slide ses_coverblog text-xs-center">
     <v-container>
       <h1 class="ses_headline">Blog</h1>

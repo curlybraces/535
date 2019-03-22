@@ -29,8 +29,9 @@
       </div>
 
       <!-- Blog -->
-      <Blog />
-
+      <div class="section">
+        <Blog />
+      </div>
 
       <!-- Case Study -->
       <div class="section">
