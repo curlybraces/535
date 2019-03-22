@@ -1,49 +1,64 @@
 <template lang="html">
   <div>
-
   <full-page ref="fullpage" :options="options" id="fullpage">
-  	<div class="section " id="section0">
-  		<video id="myVideo" loop muted data-autoplay>
-  			<source src="/video/video1.mp4" type="video/mp4">
-  			<source src="/video/video1.webm" type="video/webm">
-  		</video>
-  		<div class="layer">
-  			<h1>fullPage.js videos</h1>
-  		</div>
-  	</div>
-    <div class="section " id="section0">
-  		<video id="myVideo" loop muted data-autoplay>
-  			<source src="/video/video1.mp4" type="video/mp4">
-  			<source src="/video/video1.webm" type="video/webm">
-  		</video>
-  		<div class="layer">
-  			<h1>fullPage.js videos</h1>
-  		</div>
-  	</div>
+  	<div class="section">
 
+    <!-- Portfolio Index -->
+    <div class="slide ses_coverportfolio text-xs-center">
+      <v-container>
+        <h1 class="ses_headline">Portfolio</h1>
+        <h2 class="ses_subheadline">More</h2>
+      </v-container>
+    </div>
+
+    <div id="section0">
+      <div class="slide">
+
+          <video loop muted data-autoplay>
+      			<source src="/video/video1.mp4" type="video/mp4">
+      			<source src="/video/video1.webm" type="video/webm">
+      		</video>
+        </div>
+      </div>
+
+        <div id="section0">
+        <div class="slide">
+          <video loop muted data-autoplay>
+      			<source src="/video/video2.mp4" type="video/mp4">
+      			<source src="/video/video2.webm" type="video/webm">
+      		</video>
+        </div>
+      </div>
+
+        <div id="section0">
+        <div class="slide">
+          <video loop muted data-autoplay>
+      			<source src="/video/video3.mp4" type="video/mp4">
+      			<source src="/video/video3.webm" type="video/webm">
+      		</video>
+        </div>
+      </div>
+
+  	</div>
   </full-page>
   </div>
-
 </template>
 
 <script>
 export default {
-layout: 'front'
+  layout: 'front'
 }
 </script>
 
 <style>
-/* Style for our header texts
-	* --------------------------------------- */
-	h1{
-		font-size: 5em;
-		font-family: arial,helvetica;
-		color: #fff;
-		margin:0;
-		padding:0;
-	}
-	/* Centered texts in each section
-	* --------------------------------------- */
+.ses_coverportfolio {
+  background-image: url('/img/portfolio.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #f0f0f0;
+  }
+
 	.section{
 		text-align:center;
 		overflow: hidden;
@@ -64,34 +79,10 @@ layout: 'front'
    		object-fit: cover; /*cover video background */
    		z-index:3;
 	}
-	/* Layer with position absolute in order to have it over the video
-	* --------------------------------------- */
-	#section0 .layer{
-		position: absolute;
-		z-index: 4;
-		width: 100%;
-		left: 0;
-		top: 43%;
-		/*
-		* Preventing flicker on some browsers
-		* See http://stackoverflow.com/a/36671466/1081396  or issue #183
-		*/
-		-webkit-transform: translate3d(0,0,0);
-		-ms-transform: translate3d(0,0,0);
-		transform: translate3d(0,0,0);
-	}
-	/*solves problem with overflowing video in Mac with Chrome */
-	#section0{
+
+	#section0 {
 		overflow: hidden;
 	}
-	/* Bottom menu
-	* --------------------------------------- */
-	#infoMenu li a {
-		color: #fff;
-	}
-	/* Hiding video controls
-	* See: https://css-tricks.com/custom-controls-in-html5-video-full-screen/
-	* --------------------------------------- */
 	video::-webkit-media-controls {
 	  display:none !important;
 	}
