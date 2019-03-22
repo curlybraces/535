@@ -2,22 +2,9 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
-const _48918185 = () => interopDefault(import('../pages/01.vue' /* webpackChunkName: "pages/01" */))
 const _507eba15 = () => interopDefault(import('../pages/3d.vue' /* webpackChunkName: "pages/3d" */))
-const _e705e28e = () => interopDefault(import('../pages/about.vue' /* webpackChunkName: "pages/about" */))
-const _2ff08ae1 = () => interopDefault(import('../pages/careers.vue' /* webpackChunkName: "pages/careers" */))
-const _bf08b3ba = () => interopDefault(import('../pages/casestudies.vue' /* webpackChunkName: "pages/casestudies" */))
 const _25eda4ef = () => interopDefault(import('../pages/city.vue' /* webpackChunkName: "pages/city" */))
-const _4b0020b8 = () => interopDefault(import('../pages/index2.vue' /* webpackChunkName: "pages/index2" */))
-const _4ae3f1b6 = () => interopDefault(import('../pages/index3.vue' /* webpackChunkName: "pages/index3" */))
-const _1a670af4 = () => interopDefault(import('../pages/inspire.vue' /* webpackChunkName: "pages/inspire" */))
 const _a43b87da = () => interopDefault(import('../pages/page.vue' /* webpackChunkName: "pages/page" */))
-const _3793fd2f = () => interopDefault(import('../pages/pageprys.vue' /* webpackChunkName: "pages/pageprys" */))
-const _1d25f0f4 = () => interopDefault(import('../pages/portfolio.vue' /* webpackChunkName: "pages/portfolio" */))
-const _fcb8195e = () => interopDefault(import('../pages/resources.vue' /* webpackChunkName: "pages/resources" */))
-const _31af573c = () => interopDefault(import('../pages/services.vue' /* webpackChunkName: "pages/services" */))
-const _405e7076 = () => interopDefault(import('../pages/updates.vue' /* webpackChunkName: "pages/updates" */))
-const _8f021aa8 = () => interopDefault(import('../pages/videobg.vue' /* webpackChunkName: "pages/videobg" */))
 const _a7962d04 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 Vue.use(Router)
@@ -95,69 +82,17 @@ export function createRouter() {
     scrollBehavior,
 
     routes: [{
-      path: "/01",
-      component: _48918185,
-      name: "01"
-    }, {
       path: "/3d",
       component: _507eba15,
       name: "3d"
-    }, {
-      path: "/about",
-      component: _e705e28e,
-      name: "about"
-    }, {
-      path: "/careers",
-      component: _2ff08ae1,
-      name: "careers"
-    }, {
-      path: "/casestudies",
-      component: _bf08b3ba,
-      name: "casestudies"
     }, {
       path: "/city",
       component: _25eda4ef,
       name: "city"
     }, {
-      path: "/index2",
-      component: _4b0020b8,
-      name: "index2"
-    }, {
-      path: "/index3",
-      component: _4ae3f1b6,
-      name: "index3"
-    }, {
-      path: "/inspire",
-      component: _1a670af4,
-      name: "inspire"
-    }, {
       path: "/page",
       component: _a43b87da,
       name: "page"
-    }, {
-      path: "/pageprys",
-      component: _3793fd2f,
-      name: "pageprys"
-    }, {
-      path: "/portfolio",
-      component: _1d25f0f4,
-      name: "portfolio"
-    }, {
-      path: "/resources",
-      component: _fcb8195e,
-      name: "resources"
-    }, {
-      path: "/services",
-      component: _31af573c,
-      name: "services"
-    }, {
-      path: "/updates",
-      component: _405e7076,
-      name: "updates"
-    }, {
-      path: "/videobg",
-      component: _8f021aa8,
-      name: "videobg"
     }, {
       path: "/",
       component: _a7962d04,
