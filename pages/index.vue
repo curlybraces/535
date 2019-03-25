@@ -43,6 +43,11 @@
         <Career />
       </div>
 
+      <!-- Footer  -->
+      <div class="section fp-auto-height" id="section2">
+        <Footer />
+      </div>
+
     </full-page>
   </div>
 </no-ssr>
@@ -58,7 +63,7 @@ import CaseStudy from '~/components/CaseStudy.vue'
 import Blog from '~/components/Blog.vue'
 import Faq from '~/components/Faq.vue'
 import Career from '~/components/Career.vue'
-
+import Footer from '~/components/Footer.vue'
 
 export default {
   layout: 'front',
@@ -72,7 +77,8 @@ export default {
     CaseStudy,
     Blog,
     Faq,
-    Career
+    Career,
+    Footer
   },
   data() {
     return {
