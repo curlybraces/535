@@ -7,7 +7,7 @@
     </v-container>
   </div>
   <div class="slide ses_coverpage text-xs-center">
-    <v-container id="scroll-target" style="max-height: 600px" class="scroll-y ses_scrollable">
+    <v-container id="scroll-target" style="max-height: 400px" class="scroll-y ses_scrollable">
       <v-layout v-scroll:#scroll-target="" column style="height: 1000px" pl-5 pr-5>
 
         <!-- Blog 1 -->

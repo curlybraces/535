@@ -33,14 +33,9 @@
         <Blog />
       </div>
 
-      <!-- Case Study -->
+      <!-- FAQ -->
       <div class="section">
-        <CaseStudy />
-      </div>
-
-      <!-- Resource -->
-      <div class="section">
-        <Resource />
+        <Faq />
       </div>
 
       <!-- Career -->
@@ -61,6 +56,7 @@ import Portfolio from '~/components/Portfolio.vue'
 import Resource from '~/components/Resource.vue'
 import CaseStudy from '~/components/CaseStudy.vue'
 import Blog from '~/components/Blog.vue'
+import Faq from '~/components/Faq.vue'
 import Career from '~/components/Career.vue'
 
 
@@ -75,6 +71,7 @@ export default {
     Resource,
     CaseStudy,
     Blog,
+    Faq,
     Career
   },
   data() {
