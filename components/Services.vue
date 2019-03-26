@@ -27,4 +27,7 @@ export default {
 </script>
 
 <style>
+.ses_coverservices {
+  background-image: url('/img/services.jpg');
+}
 </style>

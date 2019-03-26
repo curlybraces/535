@@ -27,8 +27,8 @@
 </div>
 </template>
 
-<script>
-</script>
-
-<style lang="css">
+<style>
+.ses_covercasestudy {
+  background-image: url('/img/casestudy.jpg');
+}
 </style>

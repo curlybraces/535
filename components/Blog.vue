@@ -166,5 +166,8 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style>
+.ses_coverblog {
+  background-image: url('/img/blog.jpg');
+}
 </style>

@@ -97,6 +97,20 @@ export default {
 }
 </script>
 <style>
+
+.fp-controlArrow.fp-prev,
+.fp-controlArrow.fp-next {
+  display: none;
+}
+
+#ses_particles {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .ses_splash.ses_coverhome {
   background-image: url('/img/home.jpg');
   background-position: center top;
@@ -114,26 +128,6 @@ export default {
   width: 100%;
 }
 
-.ses_splash .ses_headline {
-  font-size: 45px;
-  font-weight: 900;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 1;
-  padding-top: 0px;
-  padding-bottom: 10px;
-  color: #eeeeee;
-  text-shadow: 2px 2px 2px #444;
-  z-index: 99;
-}
-
-.ses_splash .ses_subheadline {
-  font-weight: 400;
-  font-size: 18px;
-  color: #eee;
-  text-align: center;
-}
-
 .ses_coverabout,
 .ses_coverservices,
 .ses_coverportfolio,
@@ -147,34 +141,6 @@ export default {
   color: #f0f0f0;
 }
 
-.ses_coverabout {
-  background-image: url('/img/about.jpg');
-}
-
-.ses_coverservices {
-  background-image: url('/img/services.jpg');
-}
-
-.ses_coverportfolio {
-  background-image: url('/img/portfolio.jpg');
-}
-
-.ses_coverresource {
-  background-image: url('/img/resource.jpg');
-}
-
-.ses_covercasestudy {
-  background-image: url('/img/casestudy.jpg');
-}
-
-.ses_coverblog {
-  background-image: url('/img/blog.jpg');
-}
-
-.ses_covercareer {
-  background-image: url('/img/career.jpg');
-}
-
 .ses_coverpage {
   background-color: #e5e5e5;
   background-image: url('/img/poly2.png');
@@ -184,33 +150,6 @@ export default {
 
 #ses_more {
   color: #eeeeee;
-}
-
-.ses_splash #ses_more {
-  position: absolute;
-  top: 85%;
-  margin: 0 auto 0;
-  width: 100%;
-  text-align: center;
-  text-decoration: none;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-
-.fp-controlArrow.fp-prev,
-.fp-controlArrow.fp-next {
-  display: none;
-}
-
-
-#ses_particles {
-  z-index: 1;
-  position: absolute;
-  width: 100%;
-  height: auto;
-  display: block;
 }
 
 .ses_link {

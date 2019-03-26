@@ -28,8 +28,8 @@
 </div>
 </template>
 
-<script>
-</script>
-
-<style lang="css">
+<style>
+.ses_coverresource {
+  background-image: url('/img/resource.jpg');
+}
 </style>

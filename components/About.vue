@@ -37,3 +37,9 @@
   </div>
   </div>
 </template>
+
+<style>
+.ses_coverabout {
+  background-image: url('/img/about.jpg');
+}
+</style>

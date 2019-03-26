@@ -75,6 +75,11 @@
 
 <style>
 
+.ses_coverportfolio {
+  background-image: url('/img/portfolio.jpg');
+}
+
+
 .section{
   text-align:center;
   overflow: hidden;

@@ -166,5 +166,8 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style>
+.ses_covercareer {
+  background-image: url('/img/career.jpg');
+}
 </style>
