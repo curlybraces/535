@@ -16,7 +16,7 @@
 
             <v-hover>
               <v-card slot-scope="{ hover }" class="mb-5" color="grey lighten-4" max-width="500" v-on="on">
-                <v-img :aspect-ratio="16/9" src="/img/blog.jpg">
+                <v-img :aspect-ratio="16/9" src="/img/career.jpg">
                   <v-expand-transition>
                     <div v-if="hover" class="d-flex transition-fast-in-fast-out green darken-2 v-card--reveal title white--text" style="height: 100%;">
                       Read More
@@ -25,8 +25,8 @@
                 </v-img>
                 <v-card-text class="pt-4" style="position: relative;">
 
-                  <h3 class="title font-weight-bold green--text mb-2">Universitas Multimedia Nusantara</h3>
-                  <p class="font-weight-light grey--text subtitle mb-2">South-East Asia's Most Energy Efficient Building</p>
+                  <h3 class="title font-weight-bold green--text mb-2">Lorem Ipsum Dolot Sit Amet</h3>
+                  <p class="font-weight-light grey--text subtitle mb-2">Lorem Ipsum</p>
                 </v-card-text>
               </v-card>
             </v-hover>
@@ -35,7 +35,7 @@
 
           <v-card>
             <v-toolbar color="green darken-4" class="ses_toolbar_modal pt-1 pb-4 pr-3 pl-2 elevation-3" fixed>
-              <v-toolbar-title class="white--text">Universitas Multimedia Nusantara</v-toolbar-title>
+              <v-toolbar-title class="white--text">Career</v-toolbar-title>
               <v-spacer></v-spacer>
               <v-btn icon dark @click="dialogA = false">
                 <v-icon>close</v-icon>
@@ -45,7 +45,7 @@
             <v-container class="mt-5">
               <v-flex>
                 <v-card flat class="mt-5">
-                  <p>South-East Asia's Most Energy Efficient Building</p>
+                  <p>Lorem Ipsum Dolot Sit Amet</p>
                   <p>We work with key stakeholders to identify a variety of structural changes that directly impact energy efficiency. Our Energy Efficiency Experts compile a detailed report demonstrating key opportunities for energy efficiency
                     improvement and cost savings. We then help manage your energy, saving money short-term and long-term.</p>
                   <h3>Integrated Design Services</h3>
@@ -93,7 +93,7 @@
         <!-- Portolio 2 -->
         <v-hover>
           <v-card slot-scope="{ hover }" class="mb-5" color="grey lighten-4" max-width="500">
-            <v-img :aspect-ratio="16/9" src="/img/blog.jpg">
+            <v-img :aspect-ratio="16/9" src="/img/career.jpg">
               <v-expand-transition>
                 <div v-if="hover" class="d-flex transition-fast-in-fast-out green darken-2 v-card--reveal title white--text" style="height: 100%;">
                   Read More
@@ -102,8 +102,8 @@
             </v-img>
             <v-card-text class="pt-4" style="position: relative;">
 
-              <h3 class="title font-weight-bold green--text mb-2">Indonesia ICE</h3>
-              <p class="font-weight-light grey--text subtitle mb-2">A US $11 Million Initial Investment Reduction</p>
+              <h3 class="title font-weight-bold green--text mb-2">Lorem Ipsum Dolot Sit Amet</h3>
+              <p class="font-weight-light grey--text subtitle mb-2">Lorem Ipsum</p>
             </v-card-text>
           </v-card>
         </v-hover>
@@ -111,7 +111,7 @@
         <!-- Portolio 3 -->
         <v-hover>
           <v-card slot-scope="{ hover }" class="mb-5" color="grey lighten-4" max-width="500">
-            <v-img :aspect-ratio="16/9" src="/img/blog.jpg">
+            <v-img :aspect-ratio="16/9" src="/img/career.jpg">
               <v-expand-transition>
                 <div v-if="hover" class="d-flex transition-fast-in-fast-out green darken-4 v-card--reveal title white--text" style="height: 100%;">
                   Read More
@@ -120,8 +120,8 @@
             </v-img>
             <v-card-text class="pt-4" style="position: relative;">
 
-              <h3 class="title font-weight-bold green--text mb-2">Senopati 46 (Herman Miller Showroom)</h3>
-              <p class="font-weight-light grey--text subtitle mb-2">Indonesia's First LEED Platinum Building</p>
+              <h3 class="title font-weight-bold green--text mb-2">Lorem Ipsum Dolot Sit Amet</h3>
+              <p class="font-weight-light grey--text subtitle mb-2">Lorem Ipsum</p>
             </v-card-text>
           </v-card>
         </v-hover>
@@ -129,7 +129,7 @@
         <!-- Portolio 4 -->
         <v-hover>
           <v-card slot-scope="{ hover }" class="mb-5" color="grey lighten-4" max-width="500">
-            <v-img :aspect-ratio="16/9" src="/img/blog.jpg">
+            <v-img :aspect-ratio="16/9" src="/img/career.jpg">
               <v-expand-transition>
                 <div v-if="hover" class="d-flex transition-fast-in-fast-out green darken-2 v-card--reveal title white--text" style="height: 100%;">
                   Read More
@@ -138,8 +138,8 @@
             </v-img>
             <v-card-text class="pt-4" style="position: relative;">
 
-              <h3 class="title font-weight-bold green--text mb-2">Nagan Raya Power Plan</h3>
-              <p class="font-weight-light grey--text subtitle mb-2">An Energy Savings of US $550,000+ Per Year</p>
+              <h3 class="title font-weight-bold green--text mb-2">Lorem Ipsum Dolot Sit Amet</h3>
+              <p class="font-weight-light grey--text subtitle mb-2">Lorem Ipsum</p>
             </v-card-text>
           </v-card>
         </v-hover>

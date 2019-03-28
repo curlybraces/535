@@ -9,37 +9,37 @@
       </div>
 
       <!-- Splash -->
-      <div class="section ses_splash ses_coverhome">
+      <div id="splashnav" class="section ses_splash ses_coverhome">
         <Splash />
       </div>
 
       <!-- About -->
-      <div class="section">
+      <div id="aboutnav" class="section">
         <About />
       </div>
 
       <!-- Services -->
-      <div class="section">
+      <div id="servicesnav" class="section">
         <Services />
       </div>
 
       <!-- Portfolio -->
-      <div class="section">
+      <div id="portoflionav" class="section">
         <Portfolio />
       </div>
 
       <!-- Blog -->
-      <div class="section">
+      <div id="blognav" class="section">
         <Blog />
       </div>
 
       <!-- FAQ -->
-      <div class="section">
+      <div id="faqnav" class="section">
         <Faq />
       </div>
 
       <!-- Career -->
-      <div class="section">
+      <div id="careernav" class="section">
         <Career />
       </div>
 
@@ -64,6 +64,7 @@ import Blog from '~/components/Blog.vue'
 import Faq from '~/components/Faq.vue'
 import Career from '~/components/Career.vue'
 import Footer from '~/components/Footer.vue'
+
 
 export default {
   layout: 'front',

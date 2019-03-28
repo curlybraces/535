@@ -33,7 +33,6 @@
         tincidunt eget urna ut bibendum. Cras in libero at sapien mattis gravida. Proin id euismod tortor. Donec id lacus vel nibh iaculis consequat in vel lorem. Integer mi velit, tempus et nulla eget, suscipit interdum urna.</p>
     </v-layout>
   </v-container>
-
   </div>
   </div>
 </template>

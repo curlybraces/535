@@ -35,7 +35,7 @@
 
           <v-card>
             <v-toolbar color="green darken-4" class="ses_toolbar_modal pt-1 pb-4 pr-3 pl-2 elevation-3" fixed>
-              <v-toolbar-title class="white--text">Universitas Multimedia Nusantara</v-toolbar-title>
+              <v-toolbar-title class="white--text">Blog</v-toolbar-title>
               <v-spacer></v-spacer>
               <v-btn icon dark @click="dialogA = false">
                 <v-icon>close</v-icon>
@@ -45,6 +45,7 @@
             <v-container class="mt-5">
               <v-flex>
                 <v-card flat class="mt-5">
+                <h1>Universitas Multimedia Nusantara</h1>
                   <p>South-East Asia's Most Energy Efficient Building</p>
                   <p>We work with key stakeholders to identify a variety of structural changes that directly impact energy efficiency. Our Energy Efficiency Experts compile a detailed report demonstrating key opportunities for energy efficiency
                     improvement and cost savings. We then help manage your energy, saving money short-term and long-term.</p>
