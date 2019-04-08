@@ -1,2 +1,0 @@
-exports.ids=[1],exports.modules={187:function(t,e,o){"use strict";o.r(e);var l={components:{ModelObj:o(129).ModelObj}},n=o(4),r=o(10),c=o.n(r),d=o(43),f=o(44),m=o(45),component=Object(n.a)(l,function(){var t=this.$createElement,e=this._self._c||t;return e("no-ssr",[e("v-container",[e("v-layout",[e("v-flex",[e("model-obj",{attrs:{src:"/3d/7.obj",mtl:"/3d/7.mtl"}})],1)],1)],1)],1)},[],!1,null,null,"1eb6f3aa");e.default=component.exports;c()(component,{VContainer:d.a,VFlex:f.a,VLayout:m.a})}};
-//# sourceMappingURL=35bad2131e8be6b9efd9.js.map

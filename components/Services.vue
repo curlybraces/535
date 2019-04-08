@@ -7,11 +7,15 @@
     </v-container>
   </div>
   <div class="slide ses_coverpage text-xs-center">
-    <v-layout column justify-center align-center>
+    <v-layout column justify-center align-center pb-3>
       <h1>Services</h1>
       <h3>What We Can Do For You</h3>
     </v-layout>
-    <OurServices />
+    <v-container id="scroll-target" style="max-height: 400px" class="scroll-y ses_scrollable">
+      <v-layout v-scroll:#scroll-target="" column style="height: 500px" pt-3>
+        <OurServices />
+      </v-layout>
+    </v-container>
   </div>
 </div>
 </template>
@@ -20,10 +24,10 @@
 import OurServices from '~/components/OurServices.vue'
 
 export default {
-  components: {
-    OurServices
+    components: {
+      OurServices
+    }
   }
-}
 </script>
 
 <style>

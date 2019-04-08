@@ -3,9 +3,19 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 
 const _507eba15 = () => interopDefault(import('../pages/3d.vue' /* webpackChunkName: "pages/3d" */))
+const _7ffef9a9 = () => interopDefault(import('../pages/blog/index.vue' /* webpackChunkName: "pages/blog/index" */))
+const _612bf8f6 = () => interopDefault(import('../pages/career/index.vue' /* webpackChunkName: "pages/career/index" */))
 const _25eda4ef = () => interopDefault(import('../pages/city.vue' /* webpackChunkName: "pages/city" */))
+const _4b0020b8 = () => interopDefault(import('../pages/index2.vue' /* webpackChunkName: "pages/index2" */))
 const _a43b87da = () => interopDefault(import('../pages/page.vue' /* webpackChunkName: "pages/page" */))
+const _442ef077 = () => interopDefault(import('../pages/portfolio/index.vue' /* webpackChunkName: "pages/portfolio/index" */))
+const _466dfab8 = () => interopDefault(import('../pages/service/index.vue' /* webpackChunkName: "pages/service/index" */))
+const _a1de7866 = () => interopDefault(import('../pages/strapi.vue' /* webpackChunkName: "pages/strapi" */))
 const _5ad8aebc = () => interopDefault(import('../pages/testing.vue' /* webpackChunkName: "pages/testing" */))
+const _d9bd5b5e = () => interopDefault(import('../pages/blog/_id.vue' /* webpackChunkName: "pages/blog/_id" */))
+const _3a3d232d = () => interopDefault(import('../pages/career/_id.vue' /* webpackChunkName: "pages/career/_id" */))
+const _4e46b6c2 = () => interopDefault(import('../pages/portfolio/_id.vue' /* webpackChunkName: "pages/portfolio/_id" */))
+const _7f3f5e0c = () => interopDefault(import('../pages/service/_id.vue' /* webpackChunkName: "pages/service/_id" */))
 const _a7962d04 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 Vue.use(Router)
@@ -87,17 +97,57 @@ export function createRouter() {
       component: _507eba15,
       name: "3d"
     }, {
+      path: "/blog",
+      component: _7ffef9a9,
+      name: "blog"
+    }, {
+      path: "/career",
+      component: _612bf8f6,
+      name: "career"
+    }, {
       path: "/city",
       component: _25eda4ef,
       name: "city"
+    }, {
+      path: "/index2",
+      component: _4b0020b8,
+      name: "index2"
     }, {
       path: "/page",
       component: _a43b87da,
       name: "page"
     }, {
+      path: "/portfolio",
+      component: _442ef077,
+      name: "portfolio"
+    }, {
+      path: "/service",
+      component: _466dfab8,
+      name: "service"
+    }, {
+      path: "/strapi",
+      component: _a1de7866,
+      name: "strapi"
+    }, {
       path: "/testing",
       component: _5ad8aebc,
       name: "testing"
+    }, {
+      path: "/blog/:id",
+      component: _d9bd5b5e,
+      name: "blog-id"
+    }, {
+      path: "/career/:id",
+      component: _3a3d232d,
+      name: "career-id"
+    }, {
+      path: "/portfolio/:id",
+      component: _4e46b6c2,
+      name: "portfolio-id"
+    }, {
+      path: "/service/:id",
+      component: _7f3f5e0c,
+      name: "service-id"
     }, {
       path: "/",
       component: _a7962d04,
