@@ -297,10 +297,18 @@ const careersQuery = gql `
   }
 `;
 export default {
+  head: {
+    link: [{
+      rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css?family=Exo+2'
+    }]
+  },
   data() {
     return {
       options: {
-        normalScrollElements: '.containersc'
+        normalScrollElements: '.containersc',
+        controlArrows: false,
+        anchors:['intro', 'about', 'services', 'portfolio', 'blog', 'career', 'footer'],
       },
       dialog: false,
       dialogP: false,
@@ -388,20 +396,14 @@ export default {
 }
 </script>
 <style>
-@import url('https://fonts.googleapis.com/css?family=Lato');
-@import url('https://fonts.googleapis.com/css?family=Exo+2');
 
-* {
-font-family: 'Exo 2', sans-serif;
+body {
+  font-family: 'Exo 2', sans-serif;
+}
 
-}
-.fp-controlArrow.fp-prev,
-.fp-controlArrow.fp-next {
-  display: none;
-}
 
 #ses_particles {
-  z-index: 1;
+  z-index: 9;
   position: absolute;
   width: 100%;
   height: auto;
@@ -427,7 +429,11 @@ font-family: 'Exo 2', sans-serif;
 
 .ses_splash h1.ses_headline {
   font-family: 'Exo 2', sans-serif;
-  font-weight:900;
+  font-weight: 900;
+}
+.ses_splash .ses_subheadline {
+  font-family: 'Exo 2', sans-serif;
+  text-transform:uppercase;
 }
 
 .ses_coverabout,
@@ -547,11 +553,13 @@ video::-webkit-media-controls {
   color: #eee;
   text-align: center;
   text-transform: lowercase;
-  font-style:italic;
+  font-style: italic;
 }
+
 .ses_subheadline i {
-font-size: 12px;
+  font-size: 12px;
 }
+
 .ses_covercareer {
   background-image: url('/img/career.jpg');
 }

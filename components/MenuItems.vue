@@ -17,19 +17,19 @@ export default {
                 to: '/'
             }, {
                 title: 'About',
-                to: '#aboutnav'
+                to: '#about'
             }, {
                 title: 'Services',
-                to: '#servicesnav',
+                to: '#services',
+            }, {
+                title: 'Portfolio',
+                to: '#portfolio',
             }, {
                 title: 'Blog',
-                to: '#blognav',
-            }, {
-                title: 'Resource',
-                to: '#resourcesnav',
+                to: '#blog',
             }, {
                 title: 'Career',
-                to: '#careernav',
+                to: '#career',
             }],
             miniVariant: false,
             right: true,
