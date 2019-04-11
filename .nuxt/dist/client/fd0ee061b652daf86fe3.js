@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[11],{488:function(t,n,e){"use strict";e.r(n);var c={components:{ModelObj:e(140).a}},o=e(9),component=Object(o.a)(c,function(){var t=this.$createElement,n=this._self._c||t;return n("no-ssr",[n("model-obj",{attrs:{src:"/3d/city/city.obj",mtl:"/3d/city/city.mtl"}})],1)},[],!1,null,null,null);n.default=component.exports}}]);

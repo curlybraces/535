@@ -1,45 +1,47 @@
 <template>
-<v-list>
-      <v-list-tile v-for="(item, i) in items" :key="i" :to="item.to" router exact>
-          <v-list-tile-content>
-              <v-list-tile-title v-text="item.title"/>
-          </v-list-tile-content>
-      </v-list-tile>
-  </v-list>
+<ul id="menu">
+  <li data-menuanchor="intro" class="active"><a href="#intro">Home</a></li>
+  <li data-menuanchor="about"><a href="#about">About</a></li>
+  <li data-menuanchor="services"><a href="#services">Services</a></li>
+  <li data-menuanchor="portfolio"><a href="#portfolio">Portfolio</a></li>
+  <li data-menuanchor="blog"><a href="#blog">Blog</a></li>
+  <li data-menuanchor="career"><a href="#career">Career</a></li>
+</ul>
 </template>
 
 <script>
 export default {
-    data() {
-        return {
-            items: [{
-                title: 'Home',
-                to: '/'
-            }, {
-                title: 'About',
-                to: '#about'
-            }, {
-                title: 'Services',
-                to: '#services',
-            }, {
-                title: 'Portfolio',
-                to: '#portfolio',
-            }, {
-                title: 'Blog',
-                to: '#blog',
-            }, {
-                title: 'Career',
-                to: '#career',
-            }],
-            miniVariant: false,
-            right: true,
-            rightDrawer: null,
-            title: 'Synergy Efficiency Solutions'
-        }
+  data() {
+    return {
+      miniVariant: false,
+      right: true,
+      rightDrawer: null,
     }
+  }
 }
-
 </script>
 
-<style lang="css">
+<style>
+ul#menu {
+  margin: 20px 20px 0 20px;
+  padding: 0;
+}
+
+ul#menu li {
+  list-style-type: none;
+  padding: 0 0 5px;
+}
+
+ul#menu li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Exo 2', sans-serif;
+  color: #333;
+}
+
+ul#menu li a:hover {
+  color: #000;
+}
 </style>

@@ -27,7 +27,4 @@ export default {
 }
 </script>
 <style>
-.ses_coverabout {
-  background-image: url('/img/about.jpg');
-}
 </style>

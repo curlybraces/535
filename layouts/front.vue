@@ -2,7 +2,7 @@
   <v-app class="frontnav">
     <v-navigation-drawer v-model="drawer" :mini-variant="miniVariant" :clipped="clipped" fixed app>
       <div class="ses-logo-push">
-        <nuxt-link to="/"><img src="/img/logosesfull.png" /></nuxt-link>
+        <nuxt-link to="/#intro"><img src="/img/logosesfull.png" /></nuxt-link>
       </div>
       <MenuItems />
     </v-navigation-drawer>
@@ -10,7 +10,7 @@
       app
       :clipped-left="clipped"
     >
-    <div class="ses-logo"><a href="/"><img src="/img/logoses.png" /></a></div>
+    <div class="ses-logo"><a href="/#intro"><img src="/img/logoses.png" /></a></div>
     <v-spacer></v-spacer>
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
     </v-toolbar>
@@ -44,7 +44,6 @@ export default {
 .frontnav main.v-content {
     padding-top: 0px !important;
 }
-
 .frontnav .theme--light.v-toolbar {
     background-color: transparent;
 }
