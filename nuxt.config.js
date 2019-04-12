@@ -10,18 +10,20 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: pkg.name,
     meta: [
       {charset: "utf-8"},
-      {name: "viewport", content: "width=device-width, initial-scale=1"},
-      {hid: "description", name: "description", content: pkg.description}
+      {name: "viewport", content: "width=device-width, initial-scale=1"}
     ],
     link: [
-      {rel: "icon", type: "image/x-icon", href: "/favicon.ico"},
+      {rel: "icon", type: "image/x-icon", href: "/img/favicon.png"},
       {
         rel: "stylesheet",
         href:
           "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons"
+      },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css?family=Exo+2"
       }
     ]
   },
@@ -43,7 +45,8 @@ module.exports = {
     "@/plugins/vuetify",
     {src: "~/plugins/fullpage", ssr: false},
     {src: "@/plugins/vue-particles", ssr: false},
-    {src: "~/plugins/vue-3d-model.js", ssr: false}
+    {src: "~/plugins/vue-3d-model.js", ssr: false},
+    {src: "~/plugins/vue-meta.js", ssr: false}
   ],
 
   /*

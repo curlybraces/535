@@ -29,12 +29,12 @@ ul#menu {
 
 ul#menu li {
   list-style-type: none;
-  padding: 0 0 5px;
+  padding: 3px 0 5px;
 }
 
 ul#menu li a {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
   font-family: 'Exo 2', sans-serif;

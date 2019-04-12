@@ -5,7 +5,7 @@
       <v-toolbar-title class="white--text"><i class="fas fa-cubes"></i> Our Services</v-toolbar-title>
       <v-spacer></v-spacer>
       <nuxt-link to="/#services/1" class="ses_close">
-        <v-btn icon dark @click="$router.go(-1)">
+        <v-btn icon dark>
           <v-icon>close</v-icon>
         </v-btn>
       </nuxt-link>
@@ -31,13 +31,14 @@ const strapi = new Strapi(apiUrl)
 import axios from 'axios'
 
 export default {
-head: {
-  link: [{
-    rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css?family=Exo+2'
-  }],
-  title: 'Portfolio'
+name: 'service',
+metaInfo() {
+  return {
+    title: this.service.title,
+    titleTemplate: '%s - Synergy Efficiency Solutions'
+  }
 },
+
   async asyncData({
     params,
     error

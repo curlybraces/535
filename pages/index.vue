@@ -43,17 +43,19 @@
             <v-layout column>
               <v-flex>
                 <h1><i class="fas fa-cubes"></i> SERVICES</h1>
-                <div class="containersc">
+                <div class="containersc lgfix">
                   <div class="box">
-                    <div v-for="service in services" :key="service.id">
-                    <nuxt-link :to="/service/ + service.id" tag="a" class="ses_sublink">
-                        <div xs12 class="ses_serviceslist">
-                          <v-card-text class="px-0"></v-card-text>
-                          <img v-bind:src="'http://sesbackend.thenameisvery.com' + service.icon.url" max-width="100" />
-                          <div class="ses_subtitle">{{ service.title }}</div>
-                        </div>
+                  <v-container>
+                      <v-layout wrap>
+                      <v-flex xs12 lg4 class="ses_serviceslist" v-for="service in services" :key="service.id">
+                      <nuxt-link :to="/service/ + service.id" tag="a" class="ses_sublink">
+                            <v-card-text class="px-0"></v-card-text>
+                            <img v-bind:src="'http://sesbackend.thenameisvery.com' + service.icon.url" max-width="200" />
+                            <div class="ses_subtitle">{{ service.title }}</div>
                       </nuxt-link>
-                    </div>
+                      </v-flex>
+                      </v-layout>
+                  </v-container>
                     </div>
                   <div class="back">
                     <h2 class="ses_back pointer" @click="$refs.fullpage.api.moveSlideLeft()"><i class="fas fa-chevron-left"></i> Back</h2>
@@ -78,9 +80,8 @@
           <div class="containersc">
             <div class="box">
               <v-container>
-                  <v-layout column>
-                    <v-flex xs12 py-4>
-                    <div v-for="portfolio in portfolios" :key="portfolio.id">
+                  <v-layout wrap>
+                    <v-flex xs12 lg4 py-4 v-for="portfolio in portfolios" :key="portfolio.id">
                     <nuxt-link :to="/portfolio/ + portfolio.id" tag="a" class="ses_sublink">
                             <v-card class="mb-5" color="grey lighten-4" max-width="500">
                               <v-img v-bind:src="'http://sesbackend.thenameisvery.com' + portfolio.thumbnail.url" :aspect-ratio="16/9" />
@@ -90,7 +91,6 @@
                               </v-card-text>
                             </v-card>
                       </nuxt-link>
-                      </div>
                     </v-flex>
                   </v-layout>
                 <div class="back">
@@ -115,9 +115,8 @@
           <div class="containersc">
             <div class="box">
               <v-container>
-                  <v-layout column>
-                    <v-flex xs12>
-                      <div v-for="blog in blogs" :key="blog.id">
+                  <v-layout wrap>
+                    <v-flex xs12 lg4 v-for="blog in blogs" :key="blog.id">
                       <nuxt-link :to="/blog/ + blog.id" tag="a" class="ses_sublink">
                           <v-card class="mb-5" color="grey lighten-4" max-width="500">
                               <v-img v-bind:src="'http://sesbackend.thenameisvery.com' + blog.image.url" :aspect-ratio="16/9" />
@@ -127,7 +126,6 @@
                               </v-card-text>
                             </v-card>
                             </nuxt-link>
-                            </div>
                     </v-flex>
                   </v-layout>
                 <div class="back">
@@ -151,9 +149,8 @@
           <div class="containersc">
             <div class="box">
               <v-container>
-                  <v-layout column>
-                    <v-flex xs12>
-                      <div v-for="career in careers" :key="career.id">
+                  <v-layout wrap>
+                    <v-flex xs12 lg4 py-4 v-for="career in careers" :key="career.id">
                       <nuxt-link :to="/career/ + career.id" tag="a" class="ses_sublink">
                           <v-card class="mb-5" color="grey lighten-4" max-width="500">
                           <v-img src="/img/career.jpg" :aspect-ratio="16/9" />
@@ -163,7 +160,6 @@
                               </v-card-text>
                             </v-card>
                             </nuxt-link>
-                            </div>
                     </v-flex>
                   </v-layout>
                 <div class="back">
@@ -241,12 +237,6 @@ const careersQuery = gql `
   }
 `;
 export default {
-  head: {
-    link: [{
-      rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css?family=Exo+2'
-    }]
-  },
   data() {
     return {
       options: {
@@ -259,6 +249,19 @@ export default {
       dialog2: false,
       dialog3: false,
       on: '',
+    }
+  },
+  head: {
+    link: [{
+      rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css?family=Exo+2'
+    }]
+  },
+  metaInfo: {
+    title: 'Official Site',
+    titleTemplate: '%s - Synergy Efficiency Solutions',
+    htmlAttrs: {
+      lang: 'en',
     }
   },
   apollo: {
@@ -347,10 +350,12 @@ h3,
 h3 {
   font-family: 'Exo 2', sans-serif;
 }
-h3.title  {
+
+h3.title {
   font-family: 'Exo 2', sans-serif !important;
-  line-height:1.2 !important;
+  line-height: 1.2 !important;
 }
+
 p {
   font-size: 16px;
   line-height: 1.8;
@@ -603,4 +608,26 @@ h2.ses_navup.pointer {
   color: #333;
   font-size: 16px;
 }
+
+@media screen and (min-width: 960px) {
+  .containersc {
+    height: 700px;
+    width: auto;
+    overflow-y: scroll;
+    margin: 15px auto 0;
+  }
+  .containersc.lgfix {
+    height: 700px;
+    width: auto;
+    overflow-y: hidden;
+    margin: 15px auto 0;
+  }
+  h2.ses_back.pointer {
+    bottom:20px;
+  }
+}
+
+
+
+
 </style>

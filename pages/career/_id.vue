@@ -35,6 +35,13 @@ const strapi = new Strapi(apiUrl)
 import axios from 'axios'
 
 export default {
+name: 'career',
+metaInfo() {
+  return {
+    title: this.career.title,
+    titleTemplate: '%s - Synergy Efficiency Solutions'
+  }
+},
   head: {
     link: [{
       rel: 'stylesheet',

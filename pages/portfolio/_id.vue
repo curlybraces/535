@@ -26,7 +26,10 @@
                   <v-tab-item value="details">
                     <v-card flat>
                       <div class="ses_3dmodel">
-                        <model-obj src="/3d/city/city.obj" mtl="/3d/city/city.mtl"></model-obj>
+                      <model-obj
+                              src="/3d/ses/umn-shading.obj"
+                              mtl="/3d/ses/umn-shading.mtl">
+                      </model-obj>
                       </div>
                       <v-card-text>
                         <div v-html="$md.render( portfolio.content )"></div>
@@ -63,18 +66,16 @@ import Strapi from 'strapi-sdk-javascript/build/main'
 const apiUrl = process.env.API_URL || 'http://sesbackend.thenameisvery.com'
 const strapi = new Strapi(apiUrl)
 import axios from 'axios'
-import {
-  ModelObj
-} from 'vue-3d-model'
+import { ModelObj } from 'vue-3d-model'
 
 export default {
-  head: {
-    link: [{
-      rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css?family=Exo+2'
-    }],
-    title: 'Portfolio'
-  },
+name: 'portfolio',
+metaInfo() {
+  return {
+    title: this.portfolio.title,
+    titleTemplate: '%s - Synergy Efficiency Solutions'
+  }
+},
   layout: 'blank',
   components: {
     ModelObj

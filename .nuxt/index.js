@@ -11,7 +11,6 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_nuxticons_1dcbb2e8 from 'nuxt_plugin_nuxticons_1dcbb2e8' // Source: ./nuxt-icons.js (mode: 'all')
 import nuxt_plugin_markdownit_1c1667ed from 'nuxt_plugin_markdownit_1c1667ed' // Source: ./markdown-it.js (mode: 'all')
 import nuxt_plugin_apollomodule_3ac25e2c from 'nuxt_plugin_apollomodule_3ac25e2c' // Source: ./apollo-module.js (mode: 'all')
 import nuxt_plugin_axios_aa301b40 from 'nuxt_plugin_axios_aa301b40' // Source: ./axios.js (mode: 'all')
@@ -19,6 +18,7 @@ import nuxt_plugin_vuetify_e5914fcc from 'nuxt_plugin_vuetify_e5914fcc' // Sourc
 import nuxt_plugin_fullpage_4279eb14 from 'nuxt_plugin_fullpage_4279eb14' // Source: ../plugins/fullpage (mode: 'client')
 import nuxt_plugin_vueparticles_a922149c from 'nuxt_plugin_vueparticles_a922149c' // Source: ../plugins/vue-particles (mode: 'client')
 import nuxt_plugin_vue3dmodel_62b85ded from 'nuxt_plugin_vue3dmodel_62b85ded' // Source: ../plugins/vue-3d-model.js (mode: 'client')
+import nuxt_plugin_vuemeta_029c2f55 from 'nuxt_plugin_vuemeta_029c2f55' // Source: ../plugins/vue-meta.js (mode: 'client')
 
 // Component: <NoSsr>
 Vue.component(NoSsr.name, NoSsr)
@@ -157,7 +157,6 @@ async function createApp(ssrContext) {
 
   // Plugin execution
 
-  if (typeof nuxt_plugin_nuxticons_1dcbb2e8 === 'function') await nuxt_plugin_nuxticons_1dcbb2e8(app.context, inject)
   if (typeof nuxt_plugin_markdownit_1c1667ed === 'function') await nuxt_plugin_markdownit_1c1667ed(app.context, inject)
   if (typeof nuxt_plugin_apollomodule_3ac25e2c === 'function') await nuxt_plugin_apollomodule_3ac25e2c(app.context, inject)
   if (typeof nuxt_plugin_axios_aa301b40 === 'function') await nuxt_plugin_axios_aa301b40(app.context, inject)
@@ -167,6 +166,7 @@ async function createApp(ssrContext) {
     if (typeof nuxt_plugin_fullpage_4279eb14 === 'function') await nuxt_plugin_fullpage_4279eb14(app.context, inject)
     if (typeof nuxt_plugin_vueparticles_a922149c === 'function') await nuxt_plugin_vueparticles_a922149c(app.context, inject)
     if (typeof nuxt_plugin_vue3dmodel_62b85ded === 'function') await nuxt_plugin_vue3dmodel_62b85ded(app.context, inject)
+    if (typeof nuxt_plugin_vuemeta_029c2f55 === 'function') await nuxt_plugin_vuemeta_029c2f55(app.context, inject)
   }
 
   // If server-side, wait for async component to be resolved first

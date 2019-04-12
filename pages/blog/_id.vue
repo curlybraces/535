@@ -7,9 +7,9 @@
           <v-toolbar-title class="white--text"><i class="fas fa-folder-open"></i> blog</v-toolbar-title>
           <v-spacer></v-spacer>
           <nuxt-link to="/#blog/1" class="ses_close">
-          <v-btn icon dark>
-            <v-icon>close</v-icon>
-          </v-btn>
+            <v-btn icon dark>
+              <v-icon>close</v-icon>
+            </v-btn>
           </nuxt-link>
         </v-toolbar>
         <v-divider></v-divider>
@@ -18,7 +18,7 @@
           <v-flex>
             <v-card flat>
               <h2 class="ses_blogtitle text-xs-center pb-3">{{ blog.title }}</h2>
-                <div v-html="$md.render( blog.content )"></div>
+              <div v-html="$md.render( blog.content )"></div>
             </v-card>
           </v-flex>
         </v-container>
@@ -33,14 +33,13 @@ import Strapi from 'strapi-sdk-javascript/build/main'
 const apiUrl = process.env.API_URL || 'http://sesbackend.thenameisvery.com'
 const strapi = new Strapi(apiUrl)
 import axios from 'axios'
-
 export default {
-  head: {
-    link: [{
-      rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css?family=Exo+2'
-    }],
-    title: 'blog'
+  name: 'blog',
+  metaInfo() {
+    return {
+      title: this.blog.title,
+      titleTemplate: '%s - Synergy Efficiency Solutions'
+    }
   },
   layout: 'blank',
   computed: {},
@@ -64,7 +63,6 @@ export default {
   }
 }
 </script>
-
 <style>
 .v-toolbar__title,
 .v-card,
@@ -90,5 +88,4 @@ p {
 .ses_close {
   text-decoration: none;
 }
-
 </style>
