@@ -19,7 +19,7 @@
         </div>
         <div class="slide ses_coverpage">
           <h1><i class="fas fa-user-friends"></i> About</h1>
-          <div class="containersc">
+          <div class="containersc aboutfix">
             <v-container text-xs-left>
             <div v-html="$md.render( aboutcontent )"></div>
             <div class="back">
@@ -81,7 +81,7 @@
             <div class="box">
               <v-container>
                   <v-layout wrap>
-                    <v-flex xs12 lg4 py-4 v-for="portfolio in portfolios" :key="portfolio.id">
+                    <v-flex xs12 lg4 pb-2 px-2 v-for="portfolio in portfolios" :key="portfolio.id">
                     <nuxt-link :to="/portfolio/ + portfolio.id" tag="a" class="ses_sublink">
                             <v-card class="mb-5" color="grey lighten-4" max-width="500">
                               <v-img v-bind:src="'http://sesbackend.thenameisvery.com' + portfolio.thumbnail.url" :aspect-ratio="16/9" />
@@ -116,7 +116,7 @@
             <div class="box">
               <v-container>
                   <v-layout wrap>
-                    <v-flex xs12 lg4 v-for="blog in blogs" :key="blog.id">
+                    <v-flex xs12 lg4 pb-2 px-2 v-for="blog in blogs" :key="blog.id">
                       <nuxt-link :to="/blog/ + blog.id" tag="a" class="ses_sublink">
                           <v-card class="mb-5" color="grey lighten-4" max-width="500">
                               <v-img v-bind:src="'http://sesbackend.thenameisvery.com' + blog.image.url" :aspect-ratio="16/9" />
@@ -150,7 +150,7 @@
             <div class="box">
               <v-container>
                   <v-layout wrap>
-                    <v-flex xs12 lg4 py-4 v-for="career in careers" :key="career.id">
+                    <v-flex xs12 lg4 pb-2 px-2 v-for="career in careers" :key="career.id">
                       <nuxt-link :to="/career/ + career.id" tag="a" class="ses_sublink">
                           <v-card class="mb-5" color="grey lighten-4" max-width="500">
                           <v-img src="/img/career.jpg" :aspect-ratio="16/9" />
@@ -609,15 +609,22 @@ h2.ses_navup.pointer {
   font-size: 16px;
 }
 
-@media screen and (min-width: 960px) {
+
+/* Large Tablet to Laptop	 */
+@media (min-width: 960px) and (max-width: 1264px) {
+
+}
+
+/* Desktop */
+@media (min-width: 1264px) {
   .containersc {
-    height: 700px;
+    height: 450px;
     width: auto;
     overflow-y: scroll;
     margin: 15px auto 0;
   }
   .containersc.lgfix {
-    height: 700px;
+    height: 500px;
     width: auto;
     overflow-y: hidden;
     margin: 15px auto 0;
@@ -625,9 +632,11 @@ h2.ses_navup.pointer {
   h2.ses_back.pointer {
     bottom:20px;
   }
+  .containersc.aboutfix {
+    height: 400px;
+    width: auto;
+    overflow-y: scroll;
+    margin: 15px auto 0;
+  }
 }
-
-
-
-
 </style>
