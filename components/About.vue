@@ -3,6 +3,7 @@
   <div class="slide ses_coverabout text-xs-center">
     <v-container>
       <h1 class="ses_headline">About</h1>
+      <p>SES is on a mission to simplify energy efficiency across Southeast Asia</p>
       <h2 class="ses_subheadline">More</h2>
     </v-container>
   </div>

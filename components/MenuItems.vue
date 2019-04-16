@@ -4,8 +4,11 @@
   <li data-menuanchor="about"><a href="#about">About</a></li>
   <li data-menuanchor="services"><a href="#services">Services</a></li>
   <li data-menuanchor="portfolio"><a href="#portfolio">Portfolio</a></li>
+  <li data-menuanchor="client"><a href="#client">Clients</a></li>
   <li data-menuanchor="blog"><a href="#blog">Blog</a></li>
+  <li data-menuanchor="faq"><a href="#faq">FAQ</a></li>
   <li data-menuanchor="career"><a href="#career">Career</a></li>
+  <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
 </ul>
 </template>
 

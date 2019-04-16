@@ -1,8 +1,8 @@
 {
-  "name": "ses-dev-mode",
+  "name": "synergy-efficiency-solutions",
   "version": "1.0.0",
-  "description": "ses development mode",
-  "author": "pryspry",
+  "description": "Official site Synergy Efficiency Solutions",
+  "author": "",
   "private": true,
   "scripts": {
     "dev": "nuxt",
